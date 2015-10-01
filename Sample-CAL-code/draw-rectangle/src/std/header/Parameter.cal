@@ -1,0 +1,18 @@
+package std.header;
+
+unit Parameter:
+
+// Image size information 	
+	uint(size=16) IM_WIDTH = 176;
+	uint(size=16) IM_HEIGHT = 144;
+	
+// Rectangular window parameters	
+	uint(size=16) RECT_WIDTH = 20;	
+	uint(size=16) RECT_HEIGHT = 30;
+	uint(size=16) CENTRE_X = 40;
+	uint(size=16) CENTRE_Y = 40;	
+	
+	uint(size=16) HALF_X = RECT_WIDTH/2;
+	uint(size=16) HALF_Y = RECT_HEIGHT/2;
+		
+end

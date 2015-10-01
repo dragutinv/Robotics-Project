@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="TopDrawRectangle">
+    <Instance id="Input_video">
+        <Class name="xdf.Input"/>
+    </Instance>
+    <Instance id="Output_video">
+        <Class name="xdf.Output"/>
+    </Instance>
+    <Connection dst="Output_video" dst-port="R" src="Input_video" src-port="R"/>
+    <Connection dst="Output_video" dst-port="G" src="Input_video" src-port="G"/>
+    <Connection dst="Output_video" dst-port="B" src="Input_video" src-port="B"/>
+</XDF>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="Output">
+    <Port kind="Input" name="R">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Input" name="G">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Input" name="B">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Instance id="Rect_parameter">
+        <Class name="std.util.Header_sources"/>
+    </Instance>
+    <Instance id="Draw_Rectangle">
+        <Class name="std.util.drawRectangle"/>
+    </Instance>
+    <Instance id="RGB_to_YUV">
+        <Class name="std.stdio.RGBtoYUV"/>
+    </Instance>
+    <Instance id="YUV_to_Stream">
+        <Class name="std.stdio.YUVtoStream"/>
+    </Instance>
+    <Instance id="Test_EOS">
+        <Class name="std.stdio.EndOfStream"/>
+    </Instance>
+    <Instance id="Write_stream">
+        <Class name="std.stdio.Writer"/>
+    </Instance>
+    <Connection dst="Draw_Rectangle" dst-port="center_x"
+        src="Rect_parameter" src-port="centre_x"/>
+    <Connection dst="Draw_Rectangle" dst-port="center_y"
+        src="Rect_parameter" src-port="centre_y"/>
+    <Connection dst="Draw_Rectangle" dst-port="Bin" src="" src-port="B"/>
+    <Connection dst="Draw_Rectangle" dst-port="Gin" src="" src-port="G"/>
+    <Connection dst="Draw_Rectangle" dst-port="Rin" src="" src-port="R"/>
+    <Connection dst="RGB_to_YUV" dst-port="R" src="Draw_Rectangle" src-port="Rout"/>
+    <Connection dst="RGB_to_YUV" dst-port="G" src="Draw_Rectangle" src-port="Gout"/>
+    <Connection dst="RGB_to_YUV" dst-port="B" src="Draw_Rectangle" src-port="Bout"/>
+    <Connection dst="YUV_to_Stream" dst-port="Y" src="RGB_to_YUV" src-port="Y"/>
+    <Connection dst="YUV_to_Stream" dst-port="U" src="RGB_to_YUV" src-port="U"/>
+    <Connection dst="YUV_to_Stream" dst-port="V" src="RGB_to_YUV" src-port="V"/>
+    <Connection dst="Test_EOS" dst-port="In" src="YUV_to_Stream" src-port="YUV"/>
+    <Connection dst="Write_stream" dst-port="Byte" src="Test_EOS" src-port="Out"/>
+    <Connection dst="Write_stream" dst-port="pEOF" src="Test_EOS" src-port="pEOF"/>
+</XDF>
