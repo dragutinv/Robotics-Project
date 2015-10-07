@@ -1,0 +1,8 @@
+package org.tutorial.hellorcc;
+ 
+actor hello () ==> :
+    action ==>
+    do
+        println("Hello Orcc!");
+    end
+end
