@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="hello">
+    <Instance id="HelloInstance">
+        <Class name="org.tutorial.hellorcc.hello"/>
+    </Instance>
+</XDF>
