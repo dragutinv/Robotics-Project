@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="TopMeanShift">
+    <Instance id="source">
+        <Class name="std.stdio.Source_read"/>
+    </Instance>
+    <Instance id="Mean_Shift_Main">
+        <Class name="xdf.MeanShiftMain"/>
+    </Instance>
+    <Instance id="Test_EOS">
+        <Class name="std.stdio.EndOfStream"/>
+    </Instance>
+    <Instance id="Write_stream">
+        <Class name="std.stdio.Writer"/>
+    </Instance>
+    <Instance id="output_process">
+        <Class name="xdf.Output"/>
+    </Instance>
+    <Connection dst="Mean_Shift_Main" dst-port="input_port" src="source" src-port="O"/>
+    <Connection dst="Write_stream" dst-port="Byte" src="Test_EOS" src-port="Out"/>
+    <Connection dst="Write_stream" dst-port="pEOF" src="Test_EOS" src-port="pEOF"/>
+    <Connection dst="output_process" dst-port="R" src="Mean_Shift_Main" src-port="R"/>
+    <Connection dst="output_process" dst-port="G" src="Mean_Shift_Main" src-port="G"/>
+    <Connection dst="output_process" dst-port="B" src="Mean_Shift_Main" src-port="B"/>
+    <Connection dst="output_process" dst-port="X" src="Mean_Shift_Main" src-port="X"/>
+    <Connection dst="output_process" dst-port="Y" src="Mean_Shift_Main" src-port="Y"/>
+    <Connection dst="Test_EOS" dst-port="In" src="output_process" src-port="output"/>
+</XDF>
