@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/lib/systemActors/types/sa_types.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/lib/systemActors/io/Source.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-149] 'sa_types' is not compiled in library systemactors [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/lib/systemActors/io/Source.vhd:41]
+INFO: [VRFC 10-307] analyzing entity Source
+ERROR: [VRFC 10-1504] unit source ignored due to previous errors [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/lib/systemActors/io/Source.vhd:46]
+INFO: [VRFC 10-240] VHDL file C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/lib/systemActors/io/Source.vhd ignored due to errors

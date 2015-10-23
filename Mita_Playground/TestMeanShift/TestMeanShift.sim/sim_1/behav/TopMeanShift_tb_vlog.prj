@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S4.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S1_S1.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S4_S4.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S18_S18.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S18.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S1.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/output_process_YUV_to_Stream.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/output_process_RGB_to_YUV.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/output_process_Draw_rectangle.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_update_weight.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_kArray_evaluation.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_kArray_derv.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_Final_Centre_XY.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_displacement.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_Centre_XY.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_input_read_YUV_to_RGB.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_input_read_Stream_to_YUV.v"
+verilog xil_defaultlib  "../../../../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_update_model.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
