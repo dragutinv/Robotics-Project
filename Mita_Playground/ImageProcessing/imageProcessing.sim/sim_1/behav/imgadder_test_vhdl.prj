@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../../imadder.vhd"
-vhdl xil_defaultlib  "../../../../imgadder_test.vhd"
-
-# Do not sort compile order
-nosort

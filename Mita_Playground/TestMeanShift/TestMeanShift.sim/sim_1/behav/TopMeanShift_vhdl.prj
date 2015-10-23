@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../VHDL_from_Taner/lib/systemActors/types/sa_types.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_from_Taner/lib/systemActors/io/Source.vhd"
+vhdl xil_defaultlib  "../../../../VHDL_from_Taner/rtl/TopMeanShift.vhd"
+
+# Do not sort compile order
+nosort

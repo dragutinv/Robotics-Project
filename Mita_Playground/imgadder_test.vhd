@@ -116,8 +116,8 @@ tb: PROCESS
 	END PROCESS;
 	
 reading : process
-	file infile : text is in "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\img.txt"; --declare input file 1987
-	file infile2 : text is in "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\img.txt"; --declare input file 1987
+	file infile : text is in "img1.txt"; --declare input file 1987
+	file infile2 : text is in "img2.txt"; --declare input file 1987
 	variable inline,inline2 : line; --line number declaration
 	variable dataread1 : real;
 	begin

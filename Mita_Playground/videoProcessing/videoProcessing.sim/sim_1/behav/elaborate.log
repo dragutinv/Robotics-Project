@@ -1,0 +1,20 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 276743937593423ba9d6e8cbfcf2ba56 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_mean3x3Operation_vhd_behav xil_defaultlib.test_mean3x3Operation_vhd -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] mean3x3operation remains a black-box since it has no binding entity [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/test_mean3x3Operation.vhd:68]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling architecture main of entity xil_defaultlib.img_testbench [img_testbench_default]
+Compiling architecture behavior of entity xil_defaultlib.test_mean3x3operation_vhd
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_mean3x3Operation_vhd_behav

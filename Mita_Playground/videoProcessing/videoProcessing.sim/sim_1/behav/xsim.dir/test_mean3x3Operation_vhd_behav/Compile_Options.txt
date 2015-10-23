@@ -1,0 +1,1 @@
+-wto "276743937593423ba9d6e8cbfcf2ba56" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "test_mean3x3Operation_vhd_behav" "xil_defaultlib.test_mean3x3Operation_vhd" -log "elaborate.log" 

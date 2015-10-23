@@ -24,6 +24,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S4_S4.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S4.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -32,13 +39,6 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S1_S1.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/lib/xilinxPrimitives/RAMB16_S4_S4.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -66,20 +66,49 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/lib/systemActors/io/Source.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/output_process_YUV_to_Stream.v">
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_input_read_Stream_to_YUV.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/output_process_RGB_to_YUV.v">
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_update_model.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_kArray_evaluation.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_Centre_XY.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_displacement.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_kArray_derv.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/output_process_YUV_to_Stream.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -100,35 +129,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_kArray_evaluation.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_kArray_derv.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_Final_Centre_XY.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_displacement.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_Centre_XY.v">
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/output_process_RGB_to_YUV.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -142,17 +143,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_input_read_Stream_to_YUV.v">
+      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_Final_Centre_XY.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/rtl/Mean_Shift_Main_main_loop_cal_update_model.v">
+      <File Path="$PPRDIR/../VHDL_from_Taner/lib/systemActors/io/Source.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -163,18 +163,6 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../VHDL_from_Taner/lib/simulation/sim_package.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/TopMeanShift_tb.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -195,80 +183,94 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/output_process_YUV_to_Stream_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_TopMeanShift.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/output_process_RGB_to_YUV_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_output_process_RGB_to_YUV.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/output_process_Draw_rectangle_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_output_process_Draw_rectangle.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_weight_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_main_loop_cal_displacement.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_main_loop_cal_kArray_evaluation_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_input_read_Stream_to_YUV.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_main_loop_cal_kArray_derv_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_main_loop_cal_update_weight.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_main_loop_cal_Final_Centre_XY_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_output_process_YUV_to_Stream.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_main_loop_cal_displacement_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_main_loop_cal_Final_Centre_XY.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_main_loop_cal_Centre_XY_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_main_loop_cal_update_model.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_input_read_YUV_to_RGB_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_input_read_YUV_to_RGB.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/vhd/Mean_Shift_Main_input_read_Stream_to_YUV_tb.vhd">
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_main_loop_cal_kArray_evaluation.tcl">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_main_loop_cal_Centre_XY.tcl">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../VHDL_from_Taner/testbench/tcl_Mean_Shift_Main_main_loop_cal_kArray_derv.tcl">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -639,9 +641,45 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/../test_mean3x3Operation.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../img_testbench2_08bits.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../line_buffer.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../test_line_buffer_8b.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../test_mean3x3.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="TopMeanShift_tb"/>
+        <Option Name="TopModule" Val="TopMeanShift"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -651,10 +689,18 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <File Path="$PPRDIR/../VHDL_from_Taner/sim/sim_TopMeanShift.tcl">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="TopMeanShift_tb"/>
+        <Option Name="TopModule" Val="TopMeanShift"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>

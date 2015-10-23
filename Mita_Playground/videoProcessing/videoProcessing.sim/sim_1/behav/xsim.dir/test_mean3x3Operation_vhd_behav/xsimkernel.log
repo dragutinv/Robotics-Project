@@ -1,0 +1,4 @@
+Running: xsim.dir/test_mean3x3Operation_vhd_behav/xsimk.exe -simmode gui -wdb test_mean3x3Operation_vhd_behav.wdb -simrunnum 0 -socket 57526
+Design successfully loaded
+Design Loading Memory Usage: 20024 KB (Peak: 20024 KB)
+Design Loading CPU Usage: 202 ms

@@ -1,4 +1,2 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/imadder.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity imadder
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/imgadder_test.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity imgadder_test
