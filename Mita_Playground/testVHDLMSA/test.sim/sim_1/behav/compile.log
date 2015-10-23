@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/RP_test/Test/lib/simulation/sim_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mean_Shift_Main_main_loop_cal_update_model_tb
+ERROR: [VRFC 10-149] 'queue' is not compiled in library systembuilder [C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd:270]
+ERROR: [VRFC 10-149] 'queue' is not compiled in library systembuilder [C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd:287]
+ERROR: [VRFC 10-149] 'queue' is not compiled in library systembuilder [C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd:304]
+ERROR: [VRFC 10-149] 'queue' is not compiled in library systembuilder [C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd:321]
+ERROR: [VRFC 10-149] 'queue' is not compiled in library systembuilder [C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd:338]
+ERROR: [VRFC 10-149] 'queue' is not compiled in library systembuilder [C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd:355]
+ERROR: [VRFC 10-149] 'queue' is not compiled in library systembuilder [C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd:372]
+ERROR: [VRFC 10-1504] unit arch_mean_shift_main_main_loop_cal_update_model_tb ignored due to previous errors [C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd:24]
+INFO: [VRFC 10-240] VHDL file C:/Users/Mita/Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd ignored due to errors

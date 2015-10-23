@@ -1,0 +1,173 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:56:29 +0100
+//
+
+Mean_Shift_Main_input_read_Stream_to_YUV Total: 
+1    Equal To : 1x32 
+28   Registers : 28x1 
+13   Nots : 13x1 
+3    Memorys : 3x8 
+1    Multiply : 1x32 
+10   Muxs : 10x1 
+62   Ands : 62x1 
+10   Adds : 4x64 6x32 
+17   Ors : 17x1 
+
+Design: Mean_Shift_Main_input_read_Stream_to_YUV
+------------------------------------------------
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize_instance
+-----------------------------------------------------------------------
+    Method: Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize
+    ---------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize_instance Total: 
+1    Register : 1x1 
+------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY_instance
+---------------------------------------------------------------------
+    Method: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY
+    -------------------------------------------------------------
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+
+    Method Total:
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+    -------------
+----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY_instance Total: 
+1    And : 1x1 
+2    Registers : 2x1 
+2    Adds : 1x64 1x32 
+1    Or : 1x1 
+----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance
+---------------------------------------------------------------------
+    Method: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU
+    -------------------------------------------------------------
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+
+    Method Total:
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+    -------------
+----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance Total: 
+1    And : 1x1 
+2    Registers : 2x1 
+2    Adds : 1x64 1x32 
+1    Or : 1x1 
+----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV_instance
+---------------------------------------------------------------------
+    Method: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV
+    -------------------------------------------------------------
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+
+    Method Total:
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+    -------------
+----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV_instance Total: 
+1    And : 1x1 
+2    Registers : 2x1 
+2    Adds : 1x64 1x32 
+1    Or : 1x1 
+----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_doneCount_instance
+------------------------------------------------------------------
+    Method: Mean_Shift_Main_input_read_Stream_to_YUV_doneCount
+    ----------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+-------------------------------------------------------------------------
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_doneCount_instance Total: 
+1    Register : 1x1 
+-------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_send_instance
+-------------------------------------------------------------
+    Method: Mean_Shift_Main_input_read_Stream_to_YUV_send
+    -----------------------------------------------------
+    3    Ands : 3x1 
+    4    Registers : 4x1 
+    4    Adds : 1x64 3x32 
+    3    Memorys : 3x8 
+    3    Ors : 3x1 
+
+    Method Total:
+    3    Ands : 3x1 
+    4    Registers : 4x1 
+    4    Adds : 1x64 3x32 
+    3    Memorys : 3x8 
+    3    Ors : 3x1 
+    -------------
+--------------------------------------------------------------------
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_send_instance Total: 
+3    Ands : 3x1 
+4    Registers : 4x1 
+4    Adds : 1x64 3x32 
+3    Memorys : 3x8 
+3    Ors : 3x1 
+--------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_scheduler_instance
+------------------------------------------------------------------
+    Method: Mean_Shift_Main_input_read_Stream_to_YUV_scheduler
+    ----------------------------------------------------------
+    10   Muxs : 10x1 
+    56   Ands : 56x1 
+    1    Equal To : 1x32 
+    16   Registers : 16x1 
+    13   Nots : 13x1 
+    1    Multiply : 1x32 
+    11   Ors : 11x1 
+
+    Method Total:
+    10   Muxs : 10x1 
+    56   Ands : 56x1 
+    1    Equal To : 1x32 
+    16   Registers : 16x1 
+    13   Nots : 13x1 
+    1    Multiply : 1x32 
+    11   Ors : 11x1 
+    -------------
+-------------------------------------------------------------------------
+Entry: Mean_Shift_Main_input_read_Stream_to_YUV_scheduler_instance Total: 
+10   Muxs : 10x1 
+56   Ands : 56x1 
+1    Equal To : 1x32 
+16   Registers : 16x1 
+13   Nots : 13x1 
+1    Multiply : 1x32 
+11   Ors : 11x1 
+-------------------------------------------------------------------------
+

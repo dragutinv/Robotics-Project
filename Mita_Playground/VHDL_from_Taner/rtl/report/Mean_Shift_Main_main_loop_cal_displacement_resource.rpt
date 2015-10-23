@@ -1,0 +1,167 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:56:21 +0100
+//
+
+Mean_Shift_Main_main_loop_cal_displacement Total: 
+5    Latchs : 3x32 2x1 
+2    Equal Tos : 2x32 
+78   Registers : 5x64 20x32 53x1 
+16   Nots : 16x1 
+3    Multiplys : 3x64 
+2    Memorys : 2x32 
+2    Less Than Or Equal Tos : 2x32 
+6    Less Thans : 6x32 
+2    Not Equals : 2x32 
+43   Muxs : 37x32 6x1 
+77   Ands : 77x1 
+6    Minuss : 6x32 
+25   Adds : 13x64 12x32 
+2    Logical Ors : 2x32 
+2    Left Shifts : 2x32 
+2    Xors : 2x32 
+12   Subtracts : 12x32 
+18   Ors : 18x1 
+
+Design: Mean_Shift_Main_main_loop_cal_displacement
+--------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_displacement_getWeightsArray_instance
+--------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_displacement_getWeightsArray
+    ------------------------------------------------------------------
+    2    Muxs : 2x32 
+    6    Ands : 6x1 
+    1    Equal To : 1x32 
+    3    Registers : 3x1 
+    1    Not : 1x1 
+    6    Adds : 2x64 4x32 
+    4    Subtracts : 4x32 
+    2    Ors : 2x1 
+
+    Method Total:
+    2    Muxs : 2x32 
+    6    Ands : 6x1 
+    1    Equal To : 1x32 
+    3    Registers : 3x1 
+    1    Not : 1x1 
+    6    Adds : 2x64 4x32 
+    4    Subtracts : 4x32 
+    2    Ors : 2x1 
+    -------------
+---------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_displacement_getWeightsArray_instance Total: 
+2    Muxs : 2x32 
+6    Ands : 6x1 
+1    Equal To : 1x32 
+3    Registers : 3x1 
+1    Not : 1x1 
+6    Adds : 2x64 4x32 
+4    Subtracts : 4x32 
+2    Ors : 2x1 
+---------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_displacement_doneArrayCount_instance
+-------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_displacement_doneArrayCount
+    -----------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+--------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_displacement_doneArrayCount_instance Total: 
+1    Register : 1x1 
+--------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_displacement_compute_displacement_instance
+-------------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_displacement_compute_displacement
+    -----------------------------------------------------------------------
+    5    Latchs : 3x32 2x1 
+    63   Registers : 5x64 20x32 38x1 
+    10   Nots : 10x1 
+    2    Less Than Or Equal Tos : 2x32 
+    2    Memorys : 2x32 
+    3    Multiplys : 3x64 
+    6    Less Thans : 6x32 
+    2    Not Equals : 2x32 
+    37   Muxs : 35x32 2x1 
+    47   Ands : 47x1 
+    19   Adds : 11x64 8x32 
+    6    Minuss : 6x32 
+    2    Left Shifts : 2x32 
+    2    Logical Ors : 2x32 
+    2    Xors : 2x32 
+    8    Subtracts : 8x32 
+    9    Ors : 9x1 
+
+    Method Total:
+    5    Latchs : 3x32 2x1 
+    63   Registers : 5x64 20x32 38x1 
+    10   Nots : 10x1 
+    2    Less Than Or Equal Tos : 2x32 
+    2    Memorys : 2x32 
+    3    Multiplys : 3x64 
+    6    Less Thans : 6x32 
+    2    Not Equals : 2x32 
+    37   Muxs : 35x32 2x1 
+    47   Ands : 47x1 
+    19   Adds : 11x64 8x32 
+    6    Minuss : 6x32 
+    2    Left Shifts : 2x32 
+    2    Logical Ors : 2x32 
+    2    Xors : 2x32 
+    8    Subtracts : 8x32 
+    9    Ors : 9x1 
+    -------------
+--------------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_displacement_compute_displacement_instance Total: 
+5    Latchs : 3x32 2x1 
+63   Registers : 5x64 20x32 38x1 
+10   Nots : 10x1 
+2    Less Than Or Equal Tos : 2x32 
+2    Memorys : 2x32 
+3    Multiplys : 3x64 
+6    Less Thans : 6x32 
+2    Not Equals : 2x32 
+37   Muxs : 35x32 2x1 
+47   Ands : 47x1 
+19   Adds : 11x64 8x32 
+6    Minuss : 6x32 
+2    Left Shifts : 2x32 
+2    Logical Ors : 2x32 
+2    Xors : 2x32 
+8    Subtracts : 8x32 
+9    Ors : 9x1 
+--------------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_displacement_scheduler_instance
+--------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_displacement_scheduler
+    ------------------------------------------------------------
+    4    Muxs : 4x1 
+    24   Ands : 24x1 
+    1    Equal To : 1x32 
+    11   Registers : 11x1 
+    5    Nots : 5x1 
+    7    Ors : 7x1 
+
+    Method Total:
+    4    Muxs : 4x1 
+    24   Ands : 24x1 
+    1    Equal To : 1x32 
+    11   Registers : 11x1 
+    5    Nots : 5x1 
+    7    Ors : 7x1 
+    -------------
+---------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_displacement_scheduler_instance Total: 
+4    Muxs : 4x1 
+24   Ands : 24x1 
+1    Equal To : 1x32 
+11   Registers : 11x1 
+5    Nots : 5x1 
+7    Ors : 7x1 
+---------------------------------------------------------------------------
+

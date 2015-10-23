@@ -1,0 +1,117 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:56:27 +0100
+//
+
+Mean_Shift_Main_main_loop_cal_Centre_XY Total: 
+8    Muxs : 8x1 
+33   Ands : 33x1 
+2    Equal Tos : 2x32 
+1    Greater Than : 1x32 
+6    Registers : 6x1 
+7    Nots : 7x1 
+3    Adds : 3x64 
+9    Ors : 9x1 
+
+Design: Mean_Shift_Main_main_loop_cal_Centre_XY
+-----------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_initialise_instance
+------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Centre_XY_initialise
+    ----------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+-------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_initialise_instance Total: 
+1    Register : 1x1 
+-------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_get_dx_dy_instance
+-----------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Centre_XY_get_dx_dy
+    ---------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_get_dx_dy_instance Total: 
+1    Register : 1x1 
+------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_updateCentreXY_instance
+----------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Centre_XY_updateCentreXY
+    --------------------------------------------------------------
+    1    Mux : 1x1 
+    5    Ands : 5x1 
+    1    Greater Than : 1x32 
+    2    Equal Tos : 2x32 
+    1    Register : 1x1 
+    1    Not : 1x1 
+    3    Adds : 3x64 
+    1    Or : 1x1 
+
+    Method Total:
+    1    Mux : 1x1 
+    5    Ands : 5x1 
+    1    Greater Than : 1x32 
+    2    Equal Tos : 2x32 
+    1    Register : 1x1 
+    1    Not : 1x1 
+    3    Adds : 3x64 
+    1    Or : 1x1 
+    -------------
+-----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_updateCentreXY_instance Total: 
+1    Mux : 1x1 
+5    Ands : 5x1 
+1    Greater Than : 1x32 
+2    Equal Tos : 2x32 
+1    Register : 1x1 
+1    Not : 1x1 
+3    Adds : 3x64 
+1    Or : 1x1 
+-----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_send_instance
+------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Centre_XY_send
+    ----------------------------------------------------
+
+    Method Total:
+    -------------
+-------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_send_instance Total: 
+-------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_scheduler_instance
+-----------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Centre_XY_scheduler
+    ---------------------------------------------------------
+    7    Muxs : 7x1 
+    28   Ands : 28x1 
+    3    Registers : 3x1 
+    6    Nots : 6x1 
+    8    Ors : 8x1 
+
+    Method Total:
+    7    Muxs : 7x1 
+    28   Ands : 28x1 
+    3    Registers : 3x1 
+    6    Nots : 6x1 
+    8    Ors : 8x1 
+    -------------
+------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Centre_XY_scheduler_instance Total: 
+7    Muxs : 7x1 
+28   Ands : 28x1 
+3    Registers : 3x1 
+6    Nots : 6x1 
+8    Ors : 8x1 
+------------------------------------------------------------------------
+

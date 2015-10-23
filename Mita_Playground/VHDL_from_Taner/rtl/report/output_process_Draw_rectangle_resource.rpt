@@ -1,0 +1,182 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:56:36 +0100
+//
+
+output_process_Draw_rectangle Total: 
+6    Latchs : 6x32 
+3    Equal Tos : 3x32 
+94   Registers : 30x32 3x8 61x1 
+13   Nots : 13x1 
+2    Less Than Or Equal Tos : 2x32 
+3    Memorys : 3x8 
+26   Muxs : 18x32 8x1 
+82   Ands : 82x1 
+80   Adds : 4x64 74x32 2x17 
+2    Subtracts : 2x17 
+46   Ors : 46x1 
+
+Design: output_process_Draw_rectangle
+-------------------------------------
+Entry: output_process_Draw_rectangle_getCenterXY_instance
+---------------------------------------------------------
+    Method: output_process_Draw_rectangle_getCenterXY
+    -------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+----------------------------------------------------------------
+Entry: output_process_Draw_rectangle_getCenterXY_instance Total: 
+1    Register : 1x1 
+----------------------------------------------------------------
+
+Entry: output_process_Draw_rectangle_getValueRGB_instance
+---------------------------------------------------------
+    Method: output_process_Draw_rectangle_getValueRGB
+    -------------------------------------------------
+    2    Muxs : 2x32 
+    7    Ands : 7x1 
+    1    Equal To : 1x32 
+    11   Registers : 3x32 3x8 5x1 
+    1    Not : 1x1 
+    14   Adds : 2x64 12x32 
+    3    Ors : 3x1 
+
+    Method Total:
+    2    Muxs : 2x32 
+    7    Ands : 7x1 
+    1    Equal To : 1x32 
+    11   Registers : 3x32 3x8 5x1 
+    1    Not : 1x1 
+    14   Adds : 2x64 12x32 
+    3    Ors : 3x1 
+    -------------
+----------------------------------------------------------------
+Entry: output_process_Draw_rectangle_getValueRGB_instance Total: 
+2    Muxs : 2x32 
+7    Ands : 7x1 
+1    Equal To : 1x32 
+11   Registers : 3x32 3x8 5x1 
+1    Not : 1x1 
+14   Adds : 2x64 12x32 
+3    Ors : 3x1 
+----------------------------------------------------------------
+
+Entry: output_process_Draw_rectangle_doneCountIm_instance
+---------------------------------------------------------
+    Method: output_process_Draw_rectangle_doneCountIm
+    -------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+----------------------------------------------------------------
+Entry: output_process_Draw_rectangle_doneCountIm_instance Total: 
+1    Register : 1x1 
+----------------------------------------------------------------
+
+Entry: output_process_Draw_rectangle_drawRectangle_instance
+-----------------------------------------------------------
+    Method: output_process_Draw_rectangle_drawRectangle
+    ---------------------------------------------------
+    6    Latchs : 6x32 
+    14   Muxs : 14x32 
+    20   Ands : 20x1 
+    47   Registers : 24x32 23x1 
+    2    Nots : 2x1 
+    52   Adds : 50x32 2x17 
+    2    Less Than Or Equal Tos : 2x32 
+    2    Subtracts : 2x17 
+    20   Ors : 20x1 
+
+    Method Total:
+    6    Latchs : 6x32 
+    14   Muxs : 14x32 
+    20   Ands : 20x1 
+    47   Registers : 24x32 23x1 
+    2    Nots : 2x1 
+    52   Adds : 50x32 2x17 
+    2    Less Than Or Equal Tos : 2x32 
+    2    Subtracts : 2x17 
+    20   Ors : 20x1 
+    -------------
+------------------------------------------------------------------
+Entry: output_process_Draw_rectangle_drawRectangle_instance Total: 
+6    Latchs : 6x32 
+14   Muxs : 14x32 
+20   Ands : 20x1 
+47   Registers : 24x32 23x1 
+2    Nots : 2x1 
+52   Adds : 50x32 2x17 
+2    Less Than Or Equal Tos : 2x32 
+2    Subtracts : 2x17 
+20   Ors : 20x1 
+------------------------------------------------------------------
+
+Entry: output_process_Draw_rectangle_send_instance
+--------------------------------------------------
+    Method: output_process_Draw_rectangle_send
+    ------------------------------------------
+    2    Muxs : 2x32 
+    7    Ands : 7x1 
+    1    Equal To : 1x32 
+    8    Registers : 3x32 5x1 
+    1    Not : 1x1 
+    14   Adds : 2x64 12x32 
+    3    Memorys : 3x8 
+    3    Ors : 3x1 
+
+    Method Total:
+    2    Muxs : 2x32 
+    7    Ands : 7x1 
+    1    Equal To : 1x32 
+    8    Registers : 3x32 5x1 
+    1    Not : 1x1 
+    14   Adds : 2x64 12x32 
+    3    Memorys : 3x8 
+    3    Ors : 3x1 
+    -------------
+---------------------------------------------------------
+Entry: output_process_Draw_rectangle_send_instance Total: 
+2    Muxs : 2x32 
+7    Ands : 7x1 
+1    Equal To : 1x32 
+8    Registers : 3x32 5x1 
+1    Not : 1x1 
+14   Adds : 2x64 12x32 
+3    Memorys : 3x8 
+3    Ors : 3x1 
+---------------------------------------------------------
+
+Entry: output_process_Draw_rectangle_scheduler_instance
+-------------------------------------------------------
+    Method: output_process_Draw_rectangle_scheduler
+    -----------------------------------------------
+    8    Muxs : 8x1 
+    48   Ands : 48x1 
+    1    Equal To : 1x32 
+    26   Registers : 26x1 
+    9    Nots : 9x1 
+    20   Ors : 20x1 
+
+    Method Total:
+    8    Muxs : 8x1 
+    48   Ands : 48x1 
+    1    Equal To : 1x32 
+    26   Registers : 26x1 
+    9    Nots : 9x1 
+    20   Ors : 20x1 
+    -------------
+--------------------------------------------------------------
+Entry: output_process_Draw_rectangle_scheduler_instance Total: 
+8    Muxs : 8x1 
+48   Ands : 48x1 
+1    Equal To : 1x32 
+26   Registers : 26x1 
+9    Nots : 9x1 
+20   Ors : 20x1 
+--------------------------------------------------------------
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Mean_Shift_Main_main_loop_cal_Centre_XY">
+    <Task name="initialise">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="get_dx_dy">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="updateCentreXY">
+        <Resource MaxGateDepth="231" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="send">
+        <Resource MaxGateDepth="0" MaxLatency="0" MinGoSpacing="0" MinLatency="0"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="4" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="2"/>
+    </Task>
+</Design>

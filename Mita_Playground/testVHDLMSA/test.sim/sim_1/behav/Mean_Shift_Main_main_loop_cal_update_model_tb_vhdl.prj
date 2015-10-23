@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Documents/VIBOT/RP_test/Test/lib/simulation/sim_package.vhd"
+vhdl xil_defaultlib  "../../../Documents/VIBOT/RP_test/Test/testbench/vhd/Mean_Shift_Main_main_loop_cal_update_model_tb.vhd"
+
+# Do not sort compile order
+nosort

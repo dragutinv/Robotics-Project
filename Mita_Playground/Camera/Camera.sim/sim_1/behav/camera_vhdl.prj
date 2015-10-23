@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Documents/VIBOT/RP_test/camera.vhd"
+
+# Do not sort compile order
+nosort

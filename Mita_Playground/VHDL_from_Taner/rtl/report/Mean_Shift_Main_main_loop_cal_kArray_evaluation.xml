@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Mean_Shift_Main_main_loop_cal_kArray_evaluation">
+    <Task name="kernelEvaluation">
+        <Resource MaxGateDepth="63568" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="1"/>
+    </Task>
+    <Task name="sendData">
+        <Resource MaxGateDepth="380" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="2" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="2"/>
+    </Task>
+</Design>

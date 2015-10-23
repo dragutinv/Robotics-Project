@@ -1,0 +1,133 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:55:49 +0100
+//
+
+Mean_Shift_Main_main_loop_cal_kArray_evaluation Total: 
+4    Latchs : 3x32 1x1 
+3    Equal Tos : 1x64 2x32 
+3    Greater Thans : 3x32 
+44   Registers : 17x32 27x1 
+12   Nots : 12x1 
+1    Memory : 1x32 
+3    Less Than Or Equal Tos : 3x32 
+5    Multiplys : 2x92 3x64 
+25   Muxs : 22x32 3x1 
+57   Ands : 57x1 
+16   Adds : 10x64 6x32 
+6    Subtracts : 6x32 
+16   Ors : 16x1 
+
+Design: Mean_Shift_Main_main_loop_cal_kArray_evaluation
+-------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_kArray_evaluation_kernelEvaluation_instance
+--------------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_kArray_evaluation_kernelEvaluation
+    ------------------------------------------------------------------------
+    4    Latchs : 3x32 1x1 
+    1    Equal To : 1x64 
+    3    Greater Thans : 3x32 
+    28   Registers : 16x32 12x1 
+    7    Nots : 7x1 
+    3    Less Than Or Equal Tos : 3x32 
+    5    Multiplys : 2x92 3x64 
+    19   Muxs : 18x32 1x1 
+    31   Ands : 31x1 
+    12   Adds : 8x64 4x32 
+    4    Subtracts : 4x32 
+    6    Ors : 6x1 
+
+    Method Total:
+    4    Latchs : 3x32 1x1 
+    1    Equal To : 1x64 
+    3    Greater Thans : 3x32 
+    28   Registers : 16x32 12x1 
+    7    Nots : 7x1 
+    3    Less Than Or Equal Tos : 3x32 
+    5    Multiplys : 2x92 3x64 
+    19   Muxs : 18x32 1x1 
+    31   Ands : 31x1 
+    12   Adds : 8x64 4x32 
+    4    Subtracts : 4x32 
+    6    Ors : 6x1 
+    -------------
+---------------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_kArray_evaluation_kernelEvaluation_instance Total: 
+4    Latchs : 3x32 1x1 
+1    Equal To : 1x64 
+3    Greater Thans : 3x32 
+28   Registers : 16x32 12x1 
+7    Nots : 7x1 
+3    Less Than Or Equal Tos : 3x32 
+5    Multiplys : 2x92 3x64 
+19   Muxs : 18x32 1x1 
+31   Ands : 31x1 
+12   Adds : 8x64 4x32 
+4    Subtracts : 4x32 
+6    Ors : 6x1 
+---------------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_kArray_evaluation_sendData_instance
+------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_kArray_evaluation_sendData
+    ----------------------------------------------------------------
+    4    Muxs : 4x32 
+    9    Ands : 9x1 
+    2    Equal Tos : 2x32 
+    4    Registers : 1x32 3x1 
+    2    Nots : 2x1 
+    4    Adds : 2x64 2x32 
+    1    Memory : 1x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+
+    Method Total:
+    4    Muxs : 4x32 
+    9    Ands : 9x1 
+    2    Equal Tos : 2x32 
+    4    Registers : 1x32 3x1 
+    2    Nots : 2x1 
+    4    Adds : 2x64 2x32 
+    1    Memory : 1x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+    -------------
+-------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_kArray_evaluation_sendData_instance Total: 
+4    Muxs : 4x32 
+9    Ands : 9x1 
+2    Equal Tos : 2x32 
+4    Registers : 1x32 3x1 
+2    Nots : 2x1 
+4    Adds : 2x64 2x32 
+1    Memory : 1x32 
+2    Subtracts : 2x32 
+1    Or : 1x1 
+-------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_kArray_evaluation_scheduler_instance
+-------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_kArray_evaluation_scheduler
+    -----------------------------------------------------------------
+    2    Muxs : 2x1 
+    17   Ands : 17x1 
+    12   Registers : 12x1 
+    3    Nots : 3x1 
+    9    Ors : 9x1 
+
+    Method Total:
+    2    Muxs : 2x1 
+    17   Ands : 17x1 
+    12   Registers : 12x1 
+    3    Nots : 3x1 
+    9    Ors : 9x1 
+    -------------
+--------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_kArray_evaluation_scheduler_instance Total: 
+2    Muxs : 2x1 
+17   Ands : 17x1 
+12   Registers : 12x1 
+3    Nots : 3x1 
+9    Ors : 9x1 
+--------------------------------------------------------------------------------
+

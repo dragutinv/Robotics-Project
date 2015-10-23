@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Oct 22 17:20:08 2015
+# Process ID: 19180
+# Log file: C:/Users/Mita/readWrite.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Mita/readWrite.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Mita/readWrite.sim/sim_1/behav/xsim.dir/file_handle_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 58.039 ; gain = 0.000
+
+    while executing
+"webtalk_transmit -clientid 536210856 -regid "211095751_0_0_429" -xml C:/Users/Mita/readWrite.sim/sim_1/behav/xsim.dir/file_handle_behav/webtalk/usage_..."
+    (file "C:/Users/Mita/readWrite.sim/sim_1/behav/xsim.dir/file_handle_behav/webtalk/xsim_webtalk.tcl" line 31)
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 22 17:20:26 2015...

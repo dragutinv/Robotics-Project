@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity camera
+ERROR: [VRFC 10-91] std_logic_vector is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:9]
+ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:10]
+ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:11]
+ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:12]
+ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:13]
+ERROR: [VRFC 10-1504] unit camera ignored due to previous errors [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:1]
+INFO: [VRFC 10-240] VHDL file C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd ignored due to errors

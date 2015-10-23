@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Oct 22 21:01:11 2015
+# Process ID: 13052
+# Log file: C:/Users/Mita/AdderVhdl2.runs/synth_1/testbench2.vds
+# Journal file: C:/Users/Mita/AdderVhdl2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source testbench2.tcl -notrace
+Command: synth_design -top testbench2 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 262.762 ; gain = 88.402
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1031] text is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:22]
+ERROR: [Synth 8-1031] line is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:24]
+ERROR: [Synth 8-1031] file_open is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:30]
+ERROR: [Synth 8-1031] file_open is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:31]
+ERROR: [Synth 8-1031] endfile is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:33]
+ERROR: [Synth 8-1031] readline is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:34]
+ERROR: [Synth 8-1031] readline is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:35]
+ERROR: [Synth 8-1031] read is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:37]
+ERROR: [Synth 8-1031] read is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:38]
+ERROR: [Synth 8-1031] file_close is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:57]
+ERROR: [Synth 8-1031] file_close is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:58]
+INFO: [Synth 8-2810] unit behavior ignored due to previous errors [C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench2.vhd:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 296.047 ; gain = 121.688
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 12 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 21:01:53 2015...

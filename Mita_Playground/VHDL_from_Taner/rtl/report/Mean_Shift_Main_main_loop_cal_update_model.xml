@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Mean_Shift_Main_main_loop_cal_update_model">
+    <Task name="getValueRGB">
+        <Resource MaxGateDepth="380" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="doneCountIm">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="getkArray">
+        <Resource MaxGateDepth="380" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="doneArrayCount">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="initialise">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="getCentreXY_loop">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="isLoopTrue">
+        <Resource MaxGateDepth="2" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="updateModel">
+        <Resource MaxGateDepth="1003" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="5145"/>
+    </Task>
+    <Task name="send_Qu">
+        <Resource MaxGateDepth="191" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="send_Pu">
+        <Resource MaxGateDepth="191" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="doneCount_mModel">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="send_bin">
+        <Resource MaxGateDepth="380" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="doneCount_bin">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="8" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="2"/>
+    </Task>
+</Design>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject db_ref_id="1" fp_name="/testbench/num1" type="array">
+      <obj_property name="ElementShortName">num1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num1[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench/num2" type="array">
+      <obj_property name="ElementShortName">num2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num2[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench/sum" type="array">
+      <obj_property name="ElementShortName">sum[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench/carry" type="logic">
+      <obj_property name="ElementShortName">carry</obj_property>
+      <obj_property name="ObjectShortName">carry</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench/UUT/c0" type="logic">
+      <obj_property name="ElementShortName">c0</obj_property>
+      <obj_property name="ObjectShortName">c0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench/UUT/c1" type="logic">
+      <obj_property name="ElementShortName">c1</obj_property>
+      <obj_property name="ObjectShortName">c1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench/UUT/c2" type="logic">
+      <obj_property name="ElementShortName">c2</obj_property>
+      <obj_property name="ObjectShortName">c2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/testbench/UUT/c3" type="logic">
+      <obj_property name="ElementShortName">c3</obj_property>
+      <obj_property name="ObjectShortName">c3</obj_property>
+   </wvobject>
+</wave_config>

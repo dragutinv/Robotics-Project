@@ -1,0 +1,385 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:55:52 +0100
+//
+
+Mean_Shift_Main_main_loop_cal_update_model Total: 
+9    Latchs : 8x32 1x1 
+8    Equal Tos : 7x32 1x1 
+451  Registers : 2x64 56x32 9x8 384x1 
+45   Nots : 45x1 
+12   Memorys : 9x32 3x8 
+7    Less Than Or Equal Tos : 7x32 
+3    Less Thans : 3x32 
+1    Not Equal : 1x32 
+85   Muxs : 51x32 9x8 25x1 
+229  Ands : 229x1 
+3    Greater Than Or Equal Tos : 3x8 
+9    Minuss : 3x32 6x8 
+81   Adds : 24x64 3x44 54x32 
+1    Logical Or : 1x32 
+1    Left Shift : 1x32 
+1    Xor : 1x32 
+16   Subtracts : 16x32 
+91   Ors : 91x1 
+
+Design: Mean_Shift_Main_main_loop_cal_update_model
+--------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_getValueRGB_instance
+----------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_getValueRGB
+    --------------------------------------------------------------
+    2    Muxs : 2x32 
+    7    Ands : 7x1 
+    1    Equal To : 1x32 
+    11   Registers : 3x32 3x8 5x1 
+    1    Not : 1x1 
+    14   Adds : 2x64 12x32 
+    3    Ors : 3x1 
+
+    Method Total:
+    2    Muxs : 2x32 
+    7    Ands : 7x1 
+    1    Equal To : 1x32 
+    11   Registers : 3x32 3x8 5x1 
+    1    Not : 1x1 
+    14   Adds : 2x64 12x32 
+    3    Ors : 3x1 
+    -------------
+-----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_getValueRGB_instance Total: 
+2    Muxs : 2x32 
+7    Ands : 7x1 
+1    Equal To : 1x32 
+11   Registers : 3x32 3x8 5x1 
+1    Not : 1x1 
+14   Adds : 2x64 12x32 
+3    Ors : 3x1 
+-----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_doneCountIm_instance
+----------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_doneCountIm
+    --------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+-----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_doneCountIm_instance Total: 
+1    Register : 1x1 
+-----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_getkArray_instance
+--------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_getkArray
+    ------------------------------------------------------------
+    2    Muxs : 2x32 
+    5    Ands : 5x1 
+    1    Equal To : 1x32 
+    5    Registers : 2x32 3x1 
+    1    Not : 1x1 
+    4    Adds : 2x64 2x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+
+    Method Total:
+    2    Muxs : 2x32 
+    5    Ands : 5x1 
+    1    Equal To : 1x32 
+    5    Registers : 2x32 3x1 
+    1    Not : 1x1 
+    4    Adds : 2x64 2x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+    -------------
+---------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_getkArray_instance Total: 
+2    Muxs : 2x32 
+5    Ands : 5x1 
+1    Equal To : 1x32 
+5    Registers : 2x32 3x1 
+1    Not : 1x1 
+4    Adds : 2x64 2x32 
+2    Subtracts : 2x32 
+1    Or : 1x1 
+---------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_doneArrayCount_instance
+-------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_doneArrayCount
+    -----------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+--------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_doneArrayCount_instance Total: 
+1    Register : 1x1 
+--------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_initialise_instance
+---------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_initialise
+    -------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_initialise_instance Total: 
+1    Register : 1x1 
+----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_getCentreXY_loop_instance
+---------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_getCentreXY_loop
+    -------------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+----------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_getCentreXY_loop_instance Total: 
+1    Register : 1x1 
+----------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_isLoopTrue_instance
+---------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_isLoopTrue
+    -------------------------------------------------------------
+    2    Muxs : 1x32 1x1 
+    4    Ands : 4x1 
+    1    Equal To : 1x1 
+    1    Register : 1x1 
+    1    Not : 1x1 
+
+    Method Total:
+    2    Muxs : 1x32 1x1 
+    4    Ands : 4x1 
+    1    Equal To : 1x1 
+    1    Register : 1x1 
+    1    Not : 1x1 
+    -------------
+----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_isLoopTrue_instance Total: 
+2    Muxs : 1x32 1x1 
+4    Ands : 4x1 
+1    Equal To : 1x1 
+1    Register : 1x1 
+1    Not : 1x1 
+----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_updateModel_instance
+----------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_updateModel
+    --------------------------------------------------------------
+    9    Latchs : 8x32 1x1 
+    346  Registers : 2x64 48x32 6x8 290x1 
+    14   Nots : 14x1 
+    7    Less Than Or Equal Tos : 7x32 
+    9    Memorys : 6x32 3x8 
+    3    Less Thans : 3x32 
+    1    Not Equal : 1x32 
+    54   Muxs : 44x32 9x8 1x1 
+    73   Ands : 73x1 
+    3    Greater Than Or Equal Tos : 3x8 
+    55   Adds : 16x64 3x44 36x32 
+    9    Minuss : 3x32 6x8 
+    1    Left Shift : 1x32 
+    1    Logical Or : 1x32 
+    1    Xor : 1x32 
+    12   Subtracts : 12x32 
+    27   Ors : 27x1 
+
+    Method Total:
+    9    Latchs : 8x32 1x1 
+    346  Registers : 2x64 48x32 6x8 290x1 
+    14   Nots : 14x1 
+    7    Less Than Or Equal Tos : 7x32 
+    9    Memorys : 6x32 3x8 
+    3    Less Thans : 3x32 
+    1    Not Equal : 1x32 
+    54   Muxs : 44x32 9x8 1x1 
+    73   Ands : 73x1 
+    3    Greater Than Or Equal Tos : 3x8 
+    55   Adds : 16x64 3x44 36x32 
+    9    Minuss : 3x32 6x8 
+    1    Left Shift : 1x32 
+    1    Logical Or : 1x32 
+    1    Xor : 1x32 
+    12   Subtracts : 12x32 
+    27   Ors : 27x1 
+    -------------
+-----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_updateModel_instance Total: 
+9    Latchs : 8x32 1x1 
+346  Registers : 2x64 48x32 6x8 290x1 
+14   Nots : 14x1 
+7    Less Than Or Equal Tos : 7x32 
+9    Memorys : 6x32 3x8 
+3    Less Thans : 3x32 
+1    Not Equal : 1x32 
+54   Muxs : 44x32 9x8 1x1 
+73   Ands : 73x1 
+3    Greater Than Or Equal Tos : 3x8 
+55   Adds : 16x64 3x44 36x32 
+9    Minuss : 3x32 6x8 
+1    Left Shift : 1x32 
+1    Logical Or : 1x32 
+1    Xor : 1x32 
+12   Subtracts : 12x32 
+27   Ors : 27x1 
+-----------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_send_Qu_instance
+------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_send_Qu
+    ----------------------------------------------------------
+    1    And : 1x1 
+    4    Registers : 1x32 3x1 
+    2    Adds : 1x64 1x32 
+    1    Memory : 1x32 
+    1    Or : 1x1 
+
+    Method Total:
+    1    And : 1x1 
+    4    Registers : 1x32 3x1 
+    2    Adds : 1x64 1x32 
+    1    Memory : 1x32 
+    1    Or : 1x1 
+    -------------
+-------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_send_Qu_instance Total: 
+1    And : 1x1 
+4    Registers : 1x32 3x1 
+2    Adds : 1x64 1x32 
+1    Memory : 1x32 
+1    Or : 1x1 
+-------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_send_Pu_instance
+------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_send_Pu
+    ----------------------------------------------------------
+    1    And : 1x1 
+    4    Registers : 1x32 3x1 
+    2    Adds : 1x64 1x32 
+    1    Memory : 1x32 
+    1    Or : 1x1 
+
+    Method Total:
+    1    And : 1x1 
+    4    Registers : 1x32 3x1 
+    2    Adds : 1x64 1x32 
+    1    Memory : 1x32 
+    1    Or : 1x1 
+    -------------
+-------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_send_Pu_instance Total: 
+1    And : 1x1 
+4    Registers : 1x32 3x1 
+2    Adds : 1x64 1x32 
+1    Memory : 1x32 
+1    Or : 1x1 
+-------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_doneCount_mModel_instance
+---------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_doneCount_mModel
+    -------------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+----------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_doneCount_mModel_instance Total: 
+1    Register : 1x1 
+----------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_send_bin_instance
+-------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_send_bin
+    -----------------------------------------------------------
+    2    Muxs : 2x32 
+    5    Ands : 5x1 
+    1    Equal To : 1x32 
+    4    Registers : 1x32 3x1 
+    1    Not : 1x1 
+    4    Adds : 2x64 2x32 
+    1    Memory : 1x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+
+    Method Total:
+    2    Muxs : 2x32 
+    5    Ands : 5x1 
+    1    Equal To : 1x32 
+    4    Registers : 1x32 3x1 
+    1    Not : 1x1 
+    4    Adds : 2x64 2x32 
+    1    Memory : 1x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+    -------------
+--------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_send_bin_instance Total: 
+2    Muxs : 2x32 
+5    Ands : 5x1 
+1    Equal To : 1x32 
+4    Registers : 1x32 3x1 
+1    Not : 1x1 
+4    Adds : 2x64 2x32 
+1    Memory : 1x32 
+2    Subtracts : 2x32 
+1    Or : 1x1 
+--------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_doneCount_bin_instance
+------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_doneCount_bin
+    ----------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+-------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_doneCount_bin_instance Total: 
+1    Register : 1x1 
+-------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_model_scheduler_instance
+--------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_model_scheduler
+    ------------------------------------------------------------
+    23   Muxs : 23x1 
+    133  Ands : 133x1 
+    4    Equal Tos : 4x32 
+    70   Registers : 70x1 
+    27   Nots : 27x1 
+    57   Ors : 57x1 
+
+    Method Total:
+    23   Muxs : 23x1 
+    133  Ands : 133x1 
+    4    Equal Tos : 4x32 
+    70   Registers : 70x1 
+    27   Nots : 27x1 
+    57   Ors : 57x1 
+    -------------
+---------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_model_scheduler_instance Total: 
+23   Muxs : 23x1 
+133  Ands : 133x1 
+4    Equal Tos : 4x32 
+70   Registers : 70x1 
+27   Nots : 27x1 
+57   Ors : 57x1 
+---------------------------------------------------------------------------
+

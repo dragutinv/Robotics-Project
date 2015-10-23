@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Documents/VIBOT/RP_test/Test/lib/xilinxPrimitives/RAMB16_S4_S4.v"
+verilog xil_defaultlib  "../../../Documents/VIBOT/RP_test/Test/lib/xilinxPrimitives/RAMB16_S18_S18.v"
+verilog xil_defaultlib  "../../../Documents/VIBOT/RP_test/Test/lib/xilinxPrimitives/RAMB16_S18.v"
+verilog xil_defaultlib  "../../../Documents/VIBOT/RP_test/Test/lib/xilinxPrimitives/RAMB16_S1.v"
+verilog xil_defaultlib  "../../../Documents/VIBOT/RP_test/Test/rtl/Mean_Shift_Main_main_loop_cal_update_model.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

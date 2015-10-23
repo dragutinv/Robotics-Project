@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Mean_Shift_Main_main_loop_cal_update_weight">
+    <Task name="getColorModelQu">
+        <Resource MaxGateDepth="191" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="getColorModelPu">
+        <Resource MaxGateDepth="191" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="doneCount_mModel">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="getBinValue">
+        <Resource MaxGateDepth="380" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="doneCount_bin">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="update_weights">
+        <Resource MaxGateDepth="20488" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="1"/>
+    </Task>
+    <Task name="send">
+        <Resource MaxGateDepth="380" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="doneCountSend">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="8" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="2"/>
+    </Task>
+</Design>

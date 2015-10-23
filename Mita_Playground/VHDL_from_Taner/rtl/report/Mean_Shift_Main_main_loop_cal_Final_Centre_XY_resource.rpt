@@ -1,0 +1,83 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:56:28 +0100
+//
+
+Mean_Shift_Main_main_loop_cal_Final_Centre_XY Total: 
+4    Muxs : 4x1 
+23   Ands : 23x1 
+1    Equal To : 1x1 
+5    Registers : 5x1 
+5    Nots : 5x1 
+5    Ors : 5x1 
+
+Design: Mean_Shift_Main_main_loop_cal_Final_Centre_XY
+-----------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_get_input_instance
+-----------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_get_input
+    ---------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_get_input_instance Total: 
+1    Register : 1x1 
+------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_is_final_XY_instance
+-------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_is_final_XY
+    -----------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+--------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_is_final_XY_instance Total: 
+1    Register : 1x1 
+--------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_get_and_send_XY_instance
+-----------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_get_and_send_XY
+    ---------------------------------------------------------------------
+
+    Method Total:
+    -------------
+------------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_get_and_send_XY_instance Total: 
+------------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_scheduler_instance
+-----------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_scheduler
+    ---------------------------------------------------------------
+    4    Muxs : 4x1 
+    23   Ands : 23x1 
+    1    Equal To : 1x1 
+    3    Registers : 3x1 
+    5    Nots : 5x1 
+    5    Ors : 5x1 
+
+    Method Total:
+    4    Muxs : 4x1 
+    23   Ands : 23x1 
+    1    Equal To : 1x1 
+    3    Registers : 3x1 
+    5    Nots : 5x1 
+    5    Ors : 5x1 
+    -------------
+------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_Final_Centre_XY_scheduler_instance Total: 
+4    Muxs : 4x1 
+23   Ands : 23x1 
+1    Equal To : 1x1 
+3    Registers : 3x1 
+5    Nots : 5x1 
+5    Ors : 5x1 
+------------------------------------------------------------------------------
+

@@ -1,0 +1,286 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:56:16 +0100
+//
+
+Mean_Shift_Main_main_loop_cal_update_weight Total: 
+6    Latchs : 4x32 2x1 
+7    Equal Tos : 1x64 6x32 
+2    Greater Thans : 2x32 
+91   Registers : 27x32 64x1 
+27   Nots : 27x1 
+6    Memorys : 6x32 
+4    Less Than Or Equal Tos : 4x32 
+1    Multiply : 1x64 
+3    Less Thans : 3x32 
+1    Not Equal : 1x32 
+46   Muxs : 35x32 11x1 
+130  Ands : 130x1 
+3    Minuss : 3x32 
+27   Adds : 7x64 20x32 
+1    Logical Or : 1x32 
+1    Left Shift : 1x32 
+1    Xor : 1x32 
+11   Subtracts : 11x32 
+36   Ors : 36x1 
+
+Design: Mean_Shift_Main_main_loop_cal_update_weight
+---------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_getColorModelQu_instance
+---------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_getColorModelQu
+    -------------------------------------------------------------------
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+
+    Method Total:
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+    -------------
+----------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_getColorModelQu_instance Total: 
+1    And : 1x1 
+2    Registers : 2x1 
+2    Adds : 1x64 1x32 
+1    Or : 1x1 
+----------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_getColorModelPu_instance
+---------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_getColorModelPu
+    -------------------------------------------------------------------
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+
+    Method Total:
+    1    And : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    1    Or : 1x1 
+    -------------
+----------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_getColorModelPu_instance Total: 
+1    And : 1x1 
+2    Registers : 2x1 
+2    Adds : 1x64 1x32 
+1    Or : 1x1 
+----------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_doneCount_mModel_instance
+----------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_doneCount_mModel
+    --------------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+-----------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_doneCount_mModel_instance Total: 
+1    Register : 1x1 
+-----------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_getBinValue_instance
+-----------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_getBinValue
+    ---------------------------------------------------------------
+    2    Muxs : 2x32 
+    5    Ands : 5x1 
+    1    Equal To : 1x32 
+    2    Registers : 2x1 
+    1    Not : 1x1 
+    4    Adds : 2x64 2x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+
+    Method Total:
+    2    Muxs : 2x32 
+    5    Ands : 5x1 
+    1    Equal To : 1x32 
+    2    Registers : 2x1 
+    1    Not : 1x1 
+    4    Adds : 2x64 2x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+    -------------
+------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_getBinValue_instance Total: 
+2    Muxs : 2x32 
+5    Ands : 5x1 
+1    Equal To : 1x32 
+2    Registers : 2x1 
+1    Not : 1x1 
+4    Adds : 2x64 2x32 
+2    Subtracts : 2x32 
+1    Or : 1x1 
+------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_doneCount_bin_instance
+-------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_doneCount_bin
+    -----------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+--------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_doneCount_bin_instance Total: 
+1    Register : 1x1 
+--------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_update_weights_instance
+--------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_update_weights
+    ------------------------------------------------------------------
+    6    Latchs : 4x32 2x1 
+    2    Greater Thans : 2x32 
+    2    Equal Tos : 1x64 1x32 
+    54   Registers : 26x32 28x1 
+    12   Nots : 12x1 
+    1    Multiply : 1x64 
+    4    Less Than Or Equal Tos : 4x32 
+    5    Memorys : 5x32 
+    3    Less Thans : 3x32 
+    1    Not Equal : 1x32 
+    33   Muxs : 31x32 2x1 
+    60   Ands : 60x1 
+    15   Adds : 1x64 14x32 
+    3    Minuss : 3x32 
+    1    Left Shift : 1x32 
+    1    Logical Or : 1x32 
+    7    Subtracts : 7x32 
+    1    Xor : 1x32 
+    15   Ors : 15x1 
+
+    Method Total:
+    6    Latchs : 4x32 2x1 
+    2    Greater Thans : 2x32 
+    2    Equal Tos : 1x64 1x32 
+    54   Registers : 26x32 28x1 
+    12   Nots : 12x1 
+    1    Multiply : 1x64 
+    4    Less Than Or Equal Tos : 4x32 
+    5    Memorys : 5x32 
+    3    Less Thans : 3x32 
+    1    Not Equal : 1x32 
+    33   Muxs : 31x32 2x1 
+    60   Ands : 60x1 
+    15   Adds : 1x64 14x32 
+    3    Minuss : 3x32 
+    1    Left Shift : 1x32 
+    1    Logical Or : 1x32 
+    7    Subtracts : 7x32 
+    1    Xor : 1x32 
+    15   Ors : 15x1 
+    -------------
+---------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_update_weights_instance Total: 
+6    Latchs : 4x32 2x1 
+2    Greater Thans : 2x32 
+2    Equal Tos : 1x64 1x32 
+54   Registers : 26x32 28x1 
+12   Nots : 12x1 
+1    Multiply : 1x64 
+4    Less Than Or Equal Tos : 4x32 
+5    Memorys : 5x32 
+3    Less Thans : 3x32 
+1    Not Equal : 1x32 
+33   Muxs : 31x32 2x1 
+60   Ands : 60x1 
+15   Adds : 1x64 14x32 
+3    Minuss : 3x32 
+1    Left Shift : 1x32 
+1    Logical Or : 1x32 
+7    Subtracts : 7x32 
+1    Xor : 1x32 
+15   Ors : 15x1 
+---------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_send_instance
+----------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_send
+    --------------------------------------------------------
+    2    Muxs : 2x32 
+    5    Ands : 5x1 
+    1    Equal To : 1x32 
+    4    Registers : 1x32 3x1 
+    1    Not : 1x1 
+    4    Adds : 2x64 2x32 
+    1    Memory : 1x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+
+    Method Total:
+    2    Muxs : 2x32 
+    5    Ands : 5x1 
+    1    Equal To : 1x32 
+    4    Registers : 1x32 3x1 
+    1    Not : 1x1 
+    4    Adds : 2x64 2x32 
+    1    Memory : 1x32 
+    2    Subtracts : 2x32 
+    1    Or : 1x1 
+    -------------
+-----------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_send_instance Total: 
+2    Muxs : 2x32 
+5    Ands : 5x1 
+1    Equal To : 1x32 
+4    Registers : 1x32 3x1 
+1    Not : 1x1 
+4    Adds : 2x64 2x32 
+1    Memory : 1x32 
+2    Subtracts : 2x32 
+1    Or : 1x1 
+-----------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_doneCountSend_instance
+-------------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_doneCountSend
+    -----------------------------------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+--------------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_doneCountSend_instance Total: 
+1    Register : 1x1 
+--------------------------------------------------------------------------------
+
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_scheduler_instance
+---------------------------------------------------------------------
+    Method: Mean_Shift_Main_main_loop_cal_update_weight_scheduler
+    -------------------------------------------------------------
+    9    Muxs : 9x1 
+    58   Ands : 58x1 
+    3    Equal Tos : 3x32 
+    24   Registers : 24x1 
+    13   Nots : 13x1 
+    17   Ors : 17x1 
+
+    Method Total:
+    9    Muxs : 9x1 
+    58   Ands : 58x1 
+    3    Equal Tos : 3x32 
+    24   Registers : 24x1 
+    13   Nots : 13x1 
+    17   Ors : 17x1 
+    -------------
+----------------------------------------------------------------------------
+Entry: Mean_Shift_Main_main_loop_cal_update_weight_scheduler_instance Total: 
+9    Muxs : 9x1 
+58   Ands : 58x1 
+3    Equal Tos : 3x32 
+24   Registers : 24x1 
+13   Nots : 13x1 
+17   Ors : 17x1 
+----------------------------------------------------------------------------
+

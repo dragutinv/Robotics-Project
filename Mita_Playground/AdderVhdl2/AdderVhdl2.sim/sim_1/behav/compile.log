@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/RP_test/Adder32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rc_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench

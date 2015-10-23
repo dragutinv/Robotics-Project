@@ -1,0 +1,77 @@
+//
+// Design Resource Utilization Report
+// Generated on: Wed 14 Oct 2015 15:56:48 +0100
+//
+
+output_process_RGB_to_YUV Total: 
+6    Muxs : 6x8 
+35   Ands : 35x1 
+3    Greater Thans : 3x32 
+1    Register : 1x1 
+8    Nots : 8x1 
+16   Adds : 1x20 2x19 3x18 3x17 1x16 3x15 3x13 
+1    Multiply : 1x15 
+7    Subtracts : 3x16 4x15 
+1    Or : 1x1 
+3    Less Thans : 3x32 
+
+Design: output_process_RGB_to_YUV
+---------------------------------
+Entry: output_process_RGB_to_YUV_untagged_0_instance
+----------------------------------------------------
+    Method: output_process_RGB_to_YUV_untagged_0
+    --------------------------------------------
+    6    Muxs : 6x8 
+    24   Ands : 24x1 
+    3    Greater Thans : 3x32 
+    6    Nots : 6x1 
+    16   Adds : 1x20 2x19 3x18 3x17 1x16 3x15 3x13 
+    7    Subtracts : 3x16 4x15 
+    1    Multiply : 1x15 
+    3    Less Thans : 3x32 
+
+    Method Total:
+    6    Muxs : 6x8 
+    24   Ands : 24x1 
+    3    Greater Thans : 3x32 
+    6    Nots : 6x1 
+    16   Adds : 1x20 2x19 3x18 3x17 1x16 3x15 3x13 
+    7    Subtracts : 3x16 4x15 
+    1    Multiply : 1x15 
+    3    Less Thans : 3x32 
+    -------------
+-----------------------------------------------------------
+Entry: output_process_RGB_to_YUV_untagged_0_instance Total: 
+6    Muxs : 6x8 
+24   Ands : 24x1 
+3    Greater Thans : 3x32 
+6    Nots : 6x1 
+16   Adds : 1x20 2x19 3x18 3x17 1x16 3x15 3x13 
+7    Subtracts : 3x16 4x15 
+1    Multiply : 1x15 
+3    Less Thans : 3x32 
+-----------------------------------------------------------
+
+Entry: output_process_RGB_to_YUV_scheduler_instance
+---------------------------------------------------
+    Method: output_process_RGB_to_YUV_scheduler
+    -------------------------------------------
+    11   Ands : 11x1 
+    1    Register : 1x1 
+    2    Nots : 2x1 
+    1    Or : 1x1 
+
+    Method Total:
+    11   Ands : 11x1 
+    1    Register : 1x1 
+    2    Nots : 2x1 
+    1    Or : 1x1 
+    -------------
+----------------------------------------------------------
+Entry: output_process_RGB_to_YUV_scheduler_instance Total: 
+11   Ands : 11x1 
+1    Register : 1x1 
+2    Nots : 2x1 
+1    Or : 1x1 
+----------------------------------------------------------
+

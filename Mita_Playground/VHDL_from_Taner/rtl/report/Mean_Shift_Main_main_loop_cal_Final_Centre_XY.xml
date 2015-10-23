@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Mean_Shift_Main_main_loop_cal_Final_Centre_XY">
+    <Task name="get_input">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="is_final_XY">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="get_and_send_XY">
+        <Resource MaxGateDepth="0" MaxLatency="0" MinGoSpacing="0" MinLatency="0"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="4" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="2"/>
+    </Task>
+</Design>

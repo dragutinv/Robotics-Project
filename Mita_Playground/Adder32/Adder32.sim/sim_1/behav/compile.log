@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Mita/Documents/VIBOT/RP_test/Adder32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Mita/Documents/VIBOT/RP_test/Adder32_TestBench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_TestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Mita/Adder32/Adder32.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

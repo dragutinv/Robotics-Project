@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Documents/VIBOT/RP_test/tb_file_read.vhd"
+
+# Do not sort compile order
+nosort
