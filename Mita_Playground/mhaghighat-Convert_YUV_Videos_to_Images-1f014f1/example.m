@@ -20,5 +20,8 @@ c = 0;  % counter
 for iFrame = 25:25:500
     c = c + 1;
     subplot(4,5,c), imshow(Y(:,:,iFrame));
+    frame = Y(:,:,iFrame);
+    name = ['frame_',num2str(iFrame),'.bmp'];
+    imwrite(frame, name , 'bmp')
     title(['frame #', num2str(iFrame)]);
 end

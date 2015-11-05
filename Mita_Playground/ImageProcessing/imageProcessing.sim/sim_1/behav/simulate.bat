@@ -1,6 +1,6 @@
 @echo off
 set xv_path=C:\\Xilinx\\Vivado\\2015.2\\bin
-call %xv_path%/xsim imadder_behav -key {Behavioral:sim_1:Functional:imadder} -tclbatch imadder.tcl -log simulate.log
+call %xv_path%/xsim imgadder_test_behav -key {Behavioral:sim_1:Functional:imgadder_test} -tclbatch imgadder_test.tcl -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END

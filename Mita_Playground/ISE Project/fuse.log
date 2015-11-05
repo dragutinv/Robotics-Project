@@ -1,0 +1,31 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array_tb_isim_beh.exe -prj C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array_tb_beh.prj work.Add_array_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/../vhdl/rtl/Add_array.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/../ISE_ADDER_TB2.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module Add_array_scheduler
+Compiling module Add_array_globalreset_physical_0...
+Compiling module Add_array_untagged_0
+Compiling module Add_array_Kicker_3
+Compiling module Add_array
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling package textio
+Compiling package vl_types
+Compiling architecture behavior2 of entity add_array_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 VHDL Units
+Compiled 6 Verilog Units
+Built simulation executable C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array_tb_isim_beh.exe
+Fuse Memory Usage: 38148 KB
+Fuse CPU Usage: 1031 ms

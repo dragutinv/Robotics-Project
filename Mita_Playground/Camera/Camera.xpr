@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="5" Path="C:/Users/Mita/Camera.xpr">
+<Project Version="7" Minor="5" Path="C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/Camera/Camera.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="47fd7f9bb35f490fb72e8870f66e61d3"/>
@@ -18,13 +18,13 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/Documents/VIBOT/RP_test/camera.vhd">
+      <File Path="$PPRDIR/../camera.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/Documents/VIBOT/RP_test/monitor.vhd">
+      <File Path="$PPRDIR/../monitor.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

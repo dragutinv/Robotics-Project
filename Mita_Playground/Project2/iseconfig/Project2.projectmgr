@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Project2" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Mean_Shift_Main_input_read_Stream_to_YUV C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_input_read_Stream_to_YUV.v</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_input_read_YUV_to_RGB C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_input_read_YUV_to_RGB.v</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_Centre_XY C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_main_loop_cal_Centre_XY.v</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_Final_Centre_XY C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_main_loop_cal_Final_Centre_XY.v</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_displacement C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_main_loop_cal_displacement.v</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_kArray_derv C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_main_loop_cal_kArray_derv.v</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_kArray_evaluation C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_main_loop_cal_kArray_evaluation.v</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_update_model C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_main_loop_cal_update_model.v</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_update_weight C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|Mean_Shift_Main_main_loop_cal_update_weight.v</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_input_read_Stream_to_YUV - Mean_Shift_Main_input_read_Stream_to_YUV</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_input_read_YUV_to_RGB - Mean_Shift_Main_input_read_YUV_to_RGB</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_main_loop_cal_Centre_XY - Mean_Shift_Main_main_loop_cal_Centre_XY</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_main_loop_cal_Final_Centre_XY - Mean_Shift_Main_main_loop_cal_Final_Centre_XY</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_main_loop_cal_displacement - Mean_Shift_Main_main_loop_cal_displacement</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_main_loop_cal_kArray_derv - Mean_Shift_Main_main_loop_cal_kArray_derv</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_main_loop_cal_kArray_evaluation - Mean_Shift_Main_main_loop_cal_kArray_evaluation</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_main_loop_cal_update_model - Mean_Shift_Main_main_loop_cal_update_model</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_Mean_Shift_Main_main_loop_cal_update_weight - Mean_Shift_Main_main_loop_cal_update_weight</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_output_process_Draw_rectangle - output_process_Draw_rectangle</ClosedNode>
+         <ClosedNode>/TopMeanShift - rtl C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|TopMeanShift.vhd/i_output_process_RGB_to_YUV - output_process_RGB_to_YUV</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules</ClosedNode>
+         <ClosedNode>/output_process_Draw_rectangle C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|output_process_Draw_rectangle.v</ClosedNode>
+         <ClosedNode>/output_process_RGB_to_YUV C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|output_process_RGB_to_YUV.v</ClosedNode>
+         <ClosedNode>/output_process_YUV_to_Stream C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|rtl|output_process_YUV_to_Stream.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>TopMeanShift - rtl (C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/rtl/TopMeanShift.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000003ec000000020000000000000000000000000200000064ffffffff000000810000000300000002000003ec0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>TopMeanShift - rtl (C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/rtl/TopMeanShift.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000107000000010000000100000000000000000000000064ffffffff000000810000000000000001000001070000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000130000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Mean_Shift_Main_input_read_Stream_to_YUV.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001c6000000010001000100000000000000000000000064ffffffff000000810000000000000001000001c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000ca0000007301000000050100000001</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000064000000010000000100000000000000000000000064ffffffff000000810000000000000001000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000064000000010000000100000000000000000000000064ffffffff000000810000000000000001000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Mean_Shift_Main_input_read_Stream_to_YUV_tb - arch_Mean_Shift_Main_input_read_Stream_to_YUV_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_input_read_Stream_to_YUV_tb.vhd</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_input_read_YUV_to_RGB_tb - arch_Mean_Shift_Main_input_read_YUV_to_RGB_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_input_read_YUV_to_RGB_tb.vhd</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_Centre_XY_tb - arch_Mean_Shift_Main_main_loop_cal_Centre_XY_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_main_loop_cal_Centre_XY_tb.vhd</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_Final_Centre_XY_tb - arch_Mean_Shift_Main_main_loop_cal_Final_Centre_XY_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_main_loop_cal_Final_Centre_XY_tb.vhd</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_displacement_tb - arch_Mean_Shift_Main_main_loop_cal_displacement_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_main_loop_cal_displacement_tb.vhd</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_kArray_derv_tb - arch_Mean_Shift_Main_main_loop_cal_kArray_derv_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_main_loop_cal_kArray_derv_tb.vhd</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_kArray_evaluation_tb - arch_Mean_Shift_Main_main_loop_cal_kArray_evaluation_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_main_loop_cal_kArray_evaluation_tb.vhd</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_update_model_tb - arch_Mean_Shift_Main_main_loop_cal_update_model_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_main_loop_cal_update_model_tb.vhd</ClosedNode>
+         <ClosedNode>/Mean_Shift_Main_main_loop_cal_update_weight_tb - arch_Mean_Shift_Main_main_loop_cal_update_weight_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|Mean_Shift_Main_main_loop_cal_update_weight_tb.vhd</ClosedNode>
+         <ClosedNode>/TopMeanShift_tb - arch_TopMeanShift_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|TopMeanShift_tb.vhd</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules</ClosedNode>
+         <ClosedNode>/output_process_Draw_rectangle_tb - arch_output_process_Draw_rectangle_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|output_process_Draw_rectangle_tb.vhd</ClosedNode>
+         <ClosedNode>/output_process_RGB_to_YUV_tb - arch_output_process_RGB_to_YUV_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|output_process_RGB_to_YUV_tb.vhd</ClosedNode>
+         <ClosedNode>/output_process_YUV_to_Stream_tb - arch_output_process_YUV_to_Stream_tb C:|Users|Mita|Documents|VIBOT|Robotic Project|Mita_Playground|VHDL_from_Taner|testbench|vhd|output_process_YUV_to_Stream_tb.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>TopMeanShift_tb - arch_TopMeanShift_tb (C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/testbench/vhd/TopMeanShift_tb.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000003ea000000020000000000000000000000000200000064ffffffff000000810000000300000002000003ea0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>TopMeanShift_tb - arch_TopMeanShift_tb (C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/VHDL_from_Taner/testbench/vhd/TopMeanShift_tb.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ae000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ae0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Behavioral Check Syntax</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000064000000010000000100000000000000000000000064ffffffff000000810000000000000001000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Behavioral Check Syntax</CurrentItem>
+   </ItemView>
+</Project>

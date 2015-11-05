@@ -1,0 +1,137 @@
+
+*** Running vivado
+    with args -log test_mean3x3Operation_vhd.vds -m64 -mode batch -messageDb vivado.pb -notrace -source test_mean3x3Operation_vhd.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source test_mean3x3Operation_vhd.tcl -notrace
+Command: synth_design -top test_mean3x3Operation_vhd -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 262.219 ; gain = 87.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_mean3x3Operation_vhd' [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/test_mean3x3Operation.vhd:37]
+INFO: [Synth 8-637] synthesizing blackbox instance 'uut' of component 'mean3x3Operation' [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/test_mean3x3Operation.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'img_testbench' [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:23]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: file type [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:45]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: file type [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:46]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:85]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable procedure call [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:86]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Synth 8-502] non-constant real-valued expression is not supported [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:123]
+ERROR: [Synth 8-502] non-constant real-valued expression is not supported [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:123]
+ERROR: [Synth 8-502] non-constant real-valued expression is not supported [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:123]
+WARNING: [Synth 8-614] signal 'reset_i' is read in the process but is not in the sensitivity list [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:65]
+ERROR: [Synth 8-285] failed synthesizing module 'img_testbench' [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd:23]
+ERROR: [Synth 8-285] failed synthesizing module 'test_mean3x3Operation_vhd' [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/test_mean3x3Operation.vhd:37]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 297.461 ; gain = 122.840
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 101 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 29 15:28:05 2015...

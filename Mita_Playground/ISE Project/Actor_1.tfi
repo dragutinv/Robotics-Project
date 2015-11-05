@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+Actor_1 instance_name (
+    .CLK(CLK), 
+    .source1_ACK(source1_ACK), 
+    .source1_DATA(source1_DATA), 
+    .source1_SEND(source1_SEND), 
+    .RESET(RESET), 
+    .source1_COUNT(source1_COUNT), 
+    .source1_RDY(source1_RDY)
+    );
+
+

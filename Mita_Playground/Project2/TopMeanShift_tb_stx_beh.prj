@@ -1,0 +1,6 @@
+vhdl systemBuilder "../VHDL_from_Taner/lib/systemBuilder/vhdl/sbtypes.vhdl"
+vhdl systemBuilder "../VHDL_from_Taner/lib/systemBuilder/vhdl/sbfifo.vhdl"
+vhdl systemBuilder "../VHDL_from_Taner/lib/systemBuilder/vhdl/sbfifo_behavioral.vhdl"
+vhdl isim_temp "../VHDL_from_Taner/rtl/TopMeanShift.vhd"
+vhdl isim_temp "../VHDL_from_Taner/testbench/vhd/TopMeanShift_tb.vhd"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

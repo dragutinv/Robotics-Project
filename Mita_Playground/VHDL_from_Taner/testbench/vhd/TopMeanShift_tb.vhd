@@ -40,14 +40,6 @@ architecture arch_TopMeanShift_tb of TopMeanShift_tb is
 		-- Severity level and testbench type types
 		type severity_level is (note, warning, error, failure);
 		type tb_type is (after_reset, read_file, CheckRead);
-		
-		-- Component input(s) signals
-		
-		-- Component Output(s) signals
-		
-	
-		-- GoDone Weights Output Files
-		
 		signal count : integer range 255 downto 0 := 0;
 		signal CLK : std_logic := '0';
 		signal reset : std_logic := '0';

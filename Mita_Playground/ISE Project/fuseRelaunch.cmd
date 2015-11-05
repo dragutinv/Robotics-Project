@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array_tb_isim_beh.exe" -prj "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array_tb_beh.prj" "work.Add_array_tb" "work.glbl" 

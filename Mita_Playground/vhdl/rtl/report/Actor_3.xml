@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Actor_3">
+    <Task name="untagged_0">
+        <Resource MaxGateDepth="0" MaxLatency="0" MinGoSpacing="0" MinLatency="0"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="2" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="0"/>
+    </Task>
+</Design>

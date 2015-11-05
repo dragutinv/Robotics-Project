@@ -16,7 +16,7 @@ entity img_testbench is
 	 col_o		: out std_logic_vector(15 downto 0);
 	 row_o		: out std_logic_vector(15 downto 0);
 	 rsync_o		: out std_logic;
-	 fsync_o		: out std_logic;
+	 fsync_o  : out std_logic;
     pdata_o		: out std_logic_vector(7 downto 0) );		 
 end img_testbench;
 
@@ -43,7 +43,7 @@ architecture main of img_testbench is
   subtype Byte is ByteT;
   type ByteFileType is file of Byte;
   file infile	: ByteFileType open read_mode is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\tiny_test.bmp";
-  file outfile	: ByteFileType open write_mode is "result_08bits.bmp";
+  file outfile	: ByteFileType open write_mode is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\result_08bits.bmp";
     
   -- integer to bit_vector conversion
   function int2bit_vec(A: integer; SIZE: integer) return BIT_VECTOR is
@@ -62,7 +62,7 @@ architecture main of img_testbench is
 
 begin  -- main
 
-	img_read : process (pclk_i)
+img_read : process (pclk_i)
 		variable pixelB : Byte;
 		variable pixelG : Byte;
 		variable pixelR : Byte;

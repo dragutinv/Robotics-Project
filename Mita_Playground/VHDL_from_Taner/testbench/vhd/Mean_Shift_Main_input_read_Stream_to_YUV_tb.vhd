@@ -91,7 +91,7 @@ architecture arch_Mean_Shift_Main_input_read_Stream_to_YUV_tb of Mean_Shift_Main
 		signal U_rdy : std_logic := '0';
 		signal U_count : std_logic_vector(15 downto 0) := (others => '0');
 		signal tb_FSM_V : tb_type;
-		file sim_file_Mean_Shift_Main_input_read_Stream_to_YUV_V : text is "fifoTraces/Mean_Shift_Main_input_read_Stream_to_YUV_V.txt";
+		file sim_file_Mean_Shift_Main_input_read_Stream_to_YUV_V : text is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\img2txt\img.txt";
 		signal V_data : std_logic_vector(7 downto 0) := (others => '0');
 		signal V_send : std_logic;
 		signal V_ack : std_logic := '0';

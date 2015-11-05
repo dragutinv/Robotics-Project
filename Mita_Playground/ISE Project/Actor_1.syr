@@ -1,0 +1,592 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.04 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.04 secs
+ 
+--> Reading design: Actor_1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Actor_1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Actor_1"
+Output Format                      : NGC
+Target Device                      : xc7z010-3-clg400
+
+---- Source Options
+Top Module Name                    : Actor_1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" into library work
+Parsing module <Actor_1>.
+Parsing module <Actor_1_sendData>.
+Parsing module <Actor_1_Kicker_0>.
+Parsing module <Actor_1_forge_memory_5x32_1>.
+Parsing module <Actor_1_structuralmemory_00bb0925_>.
+Parsing module <Actor_1_globalreset_physical_004a2bf9_>.
+Parsing module <Actor_1_scheduler>.
+Parsing module <Actor_1_simplememoryreferee_01582b7e_>.
+Parsing module <Actor_1_endianswapper_019b9d9b_>.
+Parsing module <Actor_1_endianswapper_0022d78f_>.
+Parsing module <Actor_1_stateVar_i>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Actor_1>.
+
+Elaborating module <Actor_1_sendData>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" Line 100: Assignment to and_u0_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" Line 52: Assignment to sendData_u3 ignored, since the identifier is never used
+
+Elaborating module <Actor_1_Kicker_0>.
+
+Elaborating module <Actor_1_structuralmemory_00bb0925_>.
+
+Elaborating module <Actor_1_forge_memory_5x32_1>.
+
+Elaborating module <RAM16X8S(INIT_00=16'b010101,INIT_01=16'b0110,INIT_02=16'b011000,INIT_03=16'b0,INIT_04=16'b0,INIT_05=16'b0,INIT_06=16'b0,INIT_07=16'b0)>.
+
+Elaborating module <RAM16X8S(INIT_00=16'b0,INIT_01=16'b0,INIT_02=16'b0,INIT_03=16'b0,INIT_04=16'b0,INIT_05=16'b0,INIT_06=16'b0,INIT_07=16'b0)>.
+
+Elaborating module <Actor_1_globalreset_physical_004a2bf9_>.
+
+Elaborating module <Actor_1_scheduler>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" Line 283: Assignment to and_u1_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" Line 287: Assignment to and_u3_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" Line 63: Assignment to Actor_1_scheduler_instance_DONE ignored, since the identifier is never used
+
+Elaborating module <Actor_1_simplememoryreferee_01582b7e_>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" Line 67: Assignment to bus_004a0c21_ ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" Line 68: Assignment to bus_018dee4b_ ignored, since the identifier is never used
+
+Elaborating module <Actor_1_stateVar_i>.
+
+Elaborating module <Actor_1_endianswapper_019b9d9b_>.
+
+Elaborating module <Actor_1_endianswapper_0022d78f_>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Actor_1>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+WARNING:Xst:647 - Input <source1_ACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" line 49: Output port <RESULT_u3> of the instance <Actor_1_sendData_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" line 61: Output port <DONE> of the instance <Actor_1_scheduler_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" line 64: Output port <bus_004a0c21_> of the instance <Actor_1_simplememoryreferee_01582b7e__1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" line 64: Output port <bus_018dee4b_> of the instance <Actor_1_simplememoryreferee_01582b7e__1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" line 64: Output port <bus_011d3865_> of the instance <Actor_1_simplememoryreferee_01582b7e__1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Actor_1> synthesized.
+
+Synthesizing Unit <Actor_1_sendData>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+WARNING:Xst:647 - Input <port_019fb855_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <reg_00deab36_u0>.
+    Found 32-bit adder for signal <add_u0> created at line 101.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Actor_1_sendData> synthesized.
+
+Synthesizing Unit <Actor_1_Kicker_0>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+    Found 1-bit register for signal <kicker_res>.
+    Found 1-bit register for signal <kicker_2>.
+    Found 1-bit register for signal <kicker_1>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <Actor_1_Kicker_0> synthesized.
+
+Synthesizing Unit <Actor_1_structuralmemory_00bb0925_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+WARNING:Xst:647 - Input <bus_014a661e_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_016d9ac6_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v" line 215: Output port <DONE> of the instance <Actor_1_forge_memory_5x32_1_instance0> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Actor_1_structuralmemory_00bb0925_> synthesized.
+
+Synthesizing Unit <Actor_1_forge_memory_5x32_1>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+WARNING:Xst:647 - Input <ADDR<31:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Actor_1_forge_memory_5x32_1> synthesized.
+
+Synthesizing Unit <Actor_1_globalreset_physical_004a2bf9_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+    Found 1-bit register for signal <glitch_u0>.
+    Found 1-bit register for signal <cross_u0>.
+    Found 1-bit register for signal <sample_u0>.
+    Found 1-bit register for signal <final_u0>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Actor_1_globalreset_physical_004a2bf9_> synthesized.
+
+Synthesizing Unit <Actor_1_scheduler>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+WARNING:Xst:647 - Input <port_010f6763_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <reg_01e16551_u0>.
+    Found 32-bit comparator greater for signal <lessThan> created at line 282
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Actor_1_scheduler> synthesized.
+
+Synthesizing Unit <Actor_1_simplememoryreferee_01582b7e_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+WARNING:Xst:647 - Input <bus_01e47654_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_00fdb20b_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_01b40b5a_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Actor_1_simplememoryreferee_01582b7e_> synthesized.
+
+Synthesizing Unit <Actor_1_stateVar_i>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+    Found 32-bit register for signal <stateVar_i_u0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Actor_1_stateVar_i> synthesized.
+
+Synthesizing Unit <Actor_1_endianswapper_019b9d9b_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+    Summary:
+	no macro.
+Unit <Actor_1_endianswapper_019b9d9b_> synthesized.
+
+Synthesizing Unit <Actor_1_endianswapper_0022d78f_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\vhdl\rtl\Actor_1.v".
+    Summary:
+	no macro.
+Unit <Actor_1_endianswapper_0022d78f_> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 10
+ 1-bit register                                        : 9
+ 32-bit register                                       : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch sample_u0 hinder the constant cleaning in the block Actor_1_globalreset_physical_004a2bf9__1.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <Actor_1>.
+The following registers are absorbed into counter <Actor_1_stateVar_i_1/stateVar_i_u0>: 1 register on signal <Actor_1_stateVar_i_1/stateVar_i_u0>.
+Unit <Actor_1> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch sample_u0 hinder the constant cleaning in the block Actor_1_globalreset_physical_004a2bf9_.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2677 - Node <Actor_1_sendData_instance/reg_00deab36_u0> of sequential type is unconnected in block <Actor_1>.
+
+Optimizing unit <Actor_1> ...
+WARNING:Xst:2398 - RAMs <Actor_1_structuralmemory_00bb0925__1/Actor_1_forge_memory_5x32_1_instance0/RAM16X8S_instance_3>, <Actor_1_structuralmemory_00bb0925__1/Actor_1_forge_memory_5x32_1_instance0/RAM16X8S_instance_2> are equivalent
+WARNING:Xst:2398 - RAMs <Actor_1_structuralmemory_00bb0925__1/Actor_1_forge_memory_5x32_1_instance0/RAM16X8S_instance_3>, <Actor_1_structuralmemory_00bb0925__1/Actor_1_forge_memory_5x32_1_instance0/RAM16X8S_instance_1> are equivalent
+WARNING:Xst:1293 - FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_31> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_30> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_29> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_28> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_27> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_26> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_25> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_24> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_23> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_22> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_21> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_20> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_19> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_18> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_17> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_16> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_15> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_14> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_13> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_12> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_11> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_10> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_9> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_8> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_7> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_6> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_5> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_4> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Actor_1_stateVar_i_1/stateVar_i_u0_3> has a constant value of 0 in block <Actor_1>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Actor_1, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <Actor_1> :
+	Found 2-bit shift register for signal <Actor_1_globalreset_physical_004a2bf9__1/cross_u0>.
+Unit <Actor_1> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Actor_1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 29
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 2
+#      LUT2                        : 5
+#      LUT3                        : 2
+#      LUT4                        : 2
+#      LUT6                        : 3
+#      MUXCY                       : 9
+#      VCC                         : 1
+#      XORCY                       : 3
+# FlipFlops/Latches                : 10
+#      FD                          : 5
+#      FDC                         : 4
+#      FDE                         : 1
+# RAMS                             : 4
+#      RAM16X8S                    : 4
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 2
+#      OBUF                        : 25
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              10  out of  35200     0%  
+ Number of Slice LUTs:                   48  out of  17600     0%  
+    Number used as Logic:                15  out of  17600     0%  
+    Number used as Memory:               33  out of   6000     0%  
+       Number used as RAM:               32
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     49
+   Number with an unused Flip Flop:      39  out of     49    79%  
+   Number with an unused LUT:             1  out of     49     2%  
+   Number of fully used LUT-FF pairs:     9  out of     49    18%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  28  out of    100    28%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 15    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.602ns (Maximum Frequency: 624.262MHz)
+   Minimum input arrival time before clock: 0.949ns
+   Maximum output required time after clock: 2.048ns
+   Maximum combinational path delay: 0.765ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 1.602ns (frequency: 624.262MHz)
+  Total number of paths / destination ports: 58 / 26
+-------------------------------------------------------------------------
+Delay:               1.602ns (Levels of Logic = 9)
+  Source:            Actor_1_stateVar_i_1/stateVar_i_u0_1 (FF)
+  Destination:       Actor_1_stateVar_i_1/stateVar_i_u0_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Actor_1_stateVar_i_1/stateVar_i_u0_1 to Actor_1_stateVar_i_1/stateVar_i_u0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             68   0.232   0.541  Actor_1_stateVar_i_1/stateVar_i_u0_1 (Actor_1_stateVar_i_1/stateVar_i_u0_1)
+     LUT3:I0->O            1   0.043   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_lut<0>1 (Actor_1_scheduler_instance/Mcompar_lessThan_lut<0>)
+     MUXCY:S->O            1   0.230   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<0> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<0>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<1> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<1>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<2> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<2>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<3> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<3>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<4> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<4>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<5> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<5>)
+     MUXCY:CI->O           4   0.148   0.303  Actor_1_scheduler_instance/Mcompar_lessThan_cy<6> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<6>)
+     LUT6:I5->O            1   0.043   0.000  Actor_1_stateVar_i_1/stateVar_i_u0_0_rstpot (Actor_1_stateVar_i_1/stateVar_i_u0_0_rstpot)
+     FDC:D                    -0.001          Actor_1_stateVar_i_1/stateVar_i_u0_0
+    ----------------------------------------
+    Total                      1.602ns (0.758ns logic, 0.844ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.949ns (Levels of Logic = 2)
+  Source:            RESET (PAD)
+  Destination:       Actor_1_scheduler_instance/reg_01e16551_u0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to Actor_1_scheduler_instance/reg_01e16551_u0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.000   0.357  RESET_IBUF (RESET_IBUF)
+     LUT2:I0->O            4   0.043   0.293  Actor_1_globalreset_physical_004a2bf9__1/or_0179aaea_u01 (bus_007e8ae0_)
+     FDC:CLR                   0.255          Actor_1_scheduler_instance/reg_01e16551_u0
+    ----------------------------------------
+    Total                      0.949ns (0.298ns logic, 0.651ns route)
+                                       (31.4% logic, 68.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 31 / 9
+-------------------------------------------------------------------------
+Offset:              2.048ns (Levels of Logic = 10)
+  Source:            Actor_1_stateVar_i_1/stateVar_i_u0_1 (FF)
+  Destination:       source1_SEND (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Actor_1_stateVar_i_1/stateVar_i_u0_1 to source1_SEND
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             68   0.232   0.541  Actor_1_stateVar_i_1/stateVar_i_u0_1 (Actor_1_stateVar_i_1/stateVar_i_u0_1)
+     LUT3:I0->O            1   0.043   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_lut<0>1 (Actor_1_scheduler_instance/Mcompar_lessThan_lut<0>)
+     MUXCY:S->O            1   0.230   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<0> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<1> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<1>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<2> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<2>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<3> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<3>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<4> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<4>)
+     MUXCY:CI->O           1   0.012   0.000  Actor_1_scheduler_instance/Mcompar_lessThan_cy<5> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<5>)
+     MUXCY:CI->O           4   0.147   0.470  Actor_1_scheduler_instance/Mcompar_lessThan_cy<6> (Actor_1_scheduler_instance/Mcompar_lessThan_cy<6>)
+     LUT4:I0->O            1   0.043   0.279  Actor_1_scheduler_instance/and_u5_u01 (scheduler)
+     OBUF:I->O                 0.000          source1_SEND_OBUF (source1_SEND)
+    ----------------------------------------
+    Total                      2.048ns (0.758ns logic, 1.290ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.765ns (Levels of Logic = 3)
+  Source:            source1_RDY (PAD)
+  Destination:       source1_SEND (PAD)
+
+  Data Path: source1_RDY to source1_SEND
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.000   0.442  source1_RDY_IBUF (source1_RDY_IBUF)
+     LUT4:I1->O            1   0.043   0.279  Actor_1_scheduler_instance/and_u5_u01 (scheduler)
+     OBUF:I->O                 0.000          source1_SEND_OBUF (source1_SEND)
+    ----------------------------------------
+    Total                      0.765ns (0.043ns logic, 0.722ns route)
+                                       (5.6% logic, 94.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.602|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 61.00 secs
+Total CPU time to Xst completion: 61.09 secs
+ 
+--> 
+
+Total memory usage is 392468 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   50 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.syr" 
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.syr" 
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.syr" 
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-3 "Actor_1.ngc" Actor_1.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Actor_1_map.ncd Actor_1.ngd Actor_1.pcf 
+vhdtdtfi -lib work {C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/vhdl/rtl/Actor_1.v} -lang verilog -prj AdderProject -o Actor_1.spl -module Actor_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq Actor_1.spl {C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.sym} 
+vhdtdtfi -lib work {C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/vhdl/rtl/Actor_1.v} -lang verilog -prj AdderProject -o Actor_1.spl -module Actor_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq Actor_1.spl {C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.sym} 
+vhdtdtfi -lang verilog -prj AdderProject -o "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Actor_1.tfi" -lib work "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/vhdl/rtl//Actor_1.v" -module Actor_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

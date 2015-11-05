@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/img_testbench2_08bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity img_testbench
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/imagetestbench_clk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity imagetestbench_clk

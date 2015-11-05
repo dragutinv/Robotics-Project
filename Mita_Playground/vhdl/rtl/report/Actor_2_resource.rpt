@@ -1,0 +1,65 @@
+//
+// Design Resource Utilization Report
+// Generated on: Sat 31 Oct 2015 11:10:48 +0000
+//
+
+Actor_2 Total: 
+8    Ands : 8x1 
+2    Registers : 2x1 
+1    Less Than : 1x32 
+1    Or : 1x1 
+2    Nots : 2x1 
+2    Adds : 1x64 1x32 
+1    Memory : 1x32 
+
+Design: Actor_2
+---------------
+Entry: Actor_2_sendData_instance
+--------------------------------
+    Method: Actor_2_sendData
+    ------------------------
+    1    And : 1x1 
+    1    Register : 1x1 
+    1    Memory : 1x32 
+    2    Adds : 1x64 1x32 
+
+    Method Total:
+    1    And : 1x1 
+    1    Register : 1x1 
+    1    Memory : 1x32 
+    2    Adds : 1x64 1x32 
+    -------------
+---------------------------------------
+Entry: Actor_2_sendData_instance Total: 
+1    And : 1x1 
+1    Register : 1x1 
+1    Memory : 1x32 
+2    Adds : 1x64 1x32 
+---------------------------------------
+
+Entry: Actor_2_scheduler_instance
+---------------------------------
+    Method: Actor_2_scheduler
+    -------------------------
+    7    Ands : 7x1 
+    1    Register : 1x1 
+    1    Or : 1x1 
+    1    Less Than : 1x32 
+    2    Nots : 2x1 
+
+    Method Total:
+    7    Ands : 7x1 
+    1    Register : 1x1 
+    1    Or : 1x1 
+    1    Less Than : 1x32 
+    2    Nots : 2x1 
+    -------------
+----------------------------------------
+Entry: Actor_2_scheduler_instance Total: 
+7    Ands : 7x1 
+1    Register : 1x1 
+1    Or : 1x1 
+1    Less Than : 1x32 
+2    Nots : 2x1 
+----------------------------------------
+

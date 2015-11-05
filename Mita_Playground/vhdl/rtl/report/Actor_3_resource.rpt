@@ -1,0 +1,47 @@
+//
+// Design Resource Utilization Report
+// Generated on: Sat 31 Oct 2015 11:10:49 +0000
+//
+
+Actor_3 Total: 
+5    Ands : 5x1 
+1    Register : 1x1 
+1    Or : 1x1 
+1    Not : 1x1 
+
+Design: Actor_3
+---------------
+Entry: Actor_3_untagged_0_instance
+----------------------------------
+    Method: Actor_3_untagged_0
+    --------------------------
+
+    Method Total:
+    -------------
+-----------------------------------------
+Entry: Actor_3_untagged_0_instance Total: 
+-----------------------------------------
+
+Entry: Actor_3_scheduler_instance
+---------------------------------
+    Method: Actor_3_scheduler
+    -------------------------
+    5    Ands : 5x1 
+    1    Register : 1x1 
+    1    Or : 1x1 
+    1    Not : 1x1 
+
+    Method Total:
+    5    Ands : 5x1 
+    1    Register : 1x1 
+    1    Or : 1x1 
+    1    Not : 1x1 
+    -------------
+----------------------------------------
+Entry: Actor_3_scheduler_instance Total: 
+5    Ands : 5x1 
+1    Register : 1x1 
+1    Or : 1x1 
+1    Not : 1x1 
+----------------------------------------
+

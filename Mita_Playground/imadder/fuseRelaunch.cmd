@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/imadder/imgadder_test_isim_beh.exe" -prj "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/imadder/imgadder_test_beh.prj" "work.imgadder_test" 

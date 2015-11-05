@@ -20,7 +20,7 @@ UUT : entity work.rc_adder port map(num1,num2,sum,carry);
 tb : process
 
 	file input1,input2 : text;
-	variable line_content1,line_content2 : string(1 to 4);
+	variable line_content1,line_content2 : string(1 to 7);
     variable line_num1,line_num2 : line;
 	variable j : integer := 0;
 	variable char1,char2 : character:='0'; 
@@ -38,7 +38,7 @@ tb : process
 		 READ (line_num2,line_content2);  
 		--For each character in the line convert it to binary value.
 		--And then store it in a signal named 'bin_value'.
-		for j in 1 to 4 loop		
+		for j in 1 to 7 loop		
 			char1 := line_content1(j);
 			char2 := line_content2(j);
 			if(char1 = '0') then

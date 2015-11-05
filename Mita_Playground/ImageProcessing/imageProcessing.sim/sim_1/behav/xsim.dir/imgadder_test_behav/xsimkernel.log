@@ -1,7 +1,0 @@
-Running: xsim.dir/imgadder_test_behav/xsimk.exe -simmode gui -wdb imgadder_test_behav.wdb -simrunnum 0 -socket 55039
-Design successfully loaded
-Design Loading Memory Usage: 19980 KB (Peak: 19980 KB)
-Design Loading CPU Usage: 202 ms
-Simulation completed
-Simulation Memory Usage: 20384 KB (Peak: 20384 KB)
-Simulation CPU Usage: 218 ms

@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-3 "Add_array.ngc" Add_array.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Add_array_map.ncd Add_array.ngd Add_array.pcf 
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-3 "Add_array.ngc" Add_array.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Add_array_map.ncd Add_array.ngd Add_array.pcf 
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Add_array_map.ncd Add_array.ngd Add_array.pcf 
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.syr" 
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.syr" 
+xst -intstyle ise -ifn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.xst" -ofn "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/ISE Project/Add_array.syr" 

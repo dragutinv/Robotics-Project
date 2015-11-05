@@ -1,0 +1,10 @@
+Command line:
+   imgadder_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53168
+
+Thu Nov 05 16:57:13 2015
+
+
+ Elaboration Time: 0.125 sec

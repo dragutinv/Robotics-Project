@@ -16,7 +16,7 @@ end imgadder_test;
 
 --architecture definition
 architecture Behavioral of imgadder_test is
-constant MAX : integer := 256*256-1;
+	constant MAX : integer := 256*256-1;
 	-- Component Declaration for the Unit Under Test (UUT)
 	COMPONENT imadder
 	PORT(
@@ -27,17 +27,18 @@ constant MAX : integer := 256*256-1;
 		sum : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
---Inputs
+	--Inputs
 	SIGNAL rstb :  std_logic := '0';
 	SIGNAL clk :  std_logic := '0';
 	SIGNAL a :  std_logic_vector(7 downto 0) := (others=>'0');
-	SIGNAL b :  std_logic_vector(7 downto 0) := (others=>'0');
---Outputs
+		SIGNAL b :  std_logic_vector(7 downto 0) := (others=>'0');
+	--Outputs
 	SIGNAL sum :  std_logic_vector(7 downto 0);
---period of clock,bit for indicating end of file.
-signal endoffile : bit := '0';
-signal d1,d2,intt,n : integer:=0;
-signal linenumber : integer:=1;
+	--period of clock,bit for indicating end of file.
+	signal endoffile : bit := '0';
+	signal d1,d2,intt,n : integer:=0;
+	signal test : integer:=0;
+	signal linenumber : integer:=1;
 --signal dbus: std_logic_vector(7 downto 0) := x"00";
 --------------------------------------------------------------------------------------------
 function CONV_STDLV8bit_2INT(ARG: std_logic_vector (7 downto 0)) 
@@ -83,7 +84,7 @@ end CONV_INT2STDLV;
     constant PERIOD : time := 20 ns;
     constant DUTY_CYCLE : real := 0.5;
     constant OFFSET : time := 30 ns;
-
+ type integer_vector is array (1 to 65536) of integer range 0 to 255;
 begin
 
 -- Instantiate the Unit Under Test (UUT)
@@ -116,34 +117,48 @@ tb: PROCESS
 	END PROCESS;
 	
 reading : process
-	file infile : text is in "img1.txt"; --declare input file 1987
-	file infile2 : text is in "img2.txt"; --declare input file 1987
+	file infile : text is in "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\img2txt\imgtxt24.txt"; --declare input file 1987
+	file infile2 : text is in "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\img2txt\imgtxt24.txt"; --declare input file 1987
 	variable inline,inline2 : line; --line number declaration
 	variable dataread1 : real;
+	--variable dataread2 : real;
+	variable count : integer := 1;
 	begin
-		wait until clk = '1' and clk'event;
-		if(n < 65535) then
-			if (not (endfile(infile) or endfile(infile2)) ) then --checking the "END OF FILE" is not reached.
-					readline(infile, inline); 
-					read(inline, dataread1);
-					d1 <=integer(dataread1);
+		wait until clk = '1' and clk'event;		
+		while(not (endfile(infile) or endfile(infile2))) loop
+			--if ( ) then --checking the "END OF FILE" is not reached.
+			for j in 1 to 65536 loop	
+				readline(infile, inline);
+				read(inline, dataread1);
+				d1 <= integer( dataread1);
 				a <= CONV_INT2STDLV(d1,8);
-					readline(infile2, inline2); 
-					read(inline2, dataread1);
-					d2 <=integer(dataread1);
+				readline(infile2, inline2); 
+				read(inline2, dataread1);
+				d2 <= integer( dataread1);
 				b <= CONV_INT2STDLV(d2,8);
-			else
-				a<=x"00";
-				b<=x"00";
-			end if;
-		else	
-		  endoffile <='1'; --set signal to tell end of file read file is reached.
-		end if;
+				endoffile <='1';
+				wait for 2 ns;
+			end loop;	
+			
+			
+			--else
+			--	a<=x"00";
+			--	b<=x"00";
+			--end if;
+		--else	
+		
+		 --set signal to tell end of file read file is reached.
+		--end if;
+			 
+		end loop;
+		file_close(infile);  --after reading all the lines close the file.	
+      file_close(infile2);
+	   wait;
 	end process reading;
 
 --write process @negative edge
 writing : process
-	file outfile : text is out "outimgvhdl.txt"; --declare output file 1987
+	file outfile : text is out "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\img2txt\outimgvhdl24.txt"; --declare output file 1987
 	variable buff_out : line; --line number declaration
 	begin
 		wait until clk = '0' and clk'event;
@@ -161,6 +176,9 @@ writing : process
 	end process writing;
 
 end Behavioral;
+
+
+
 
 --WRITE (buf, string’("hello"));
 --WRITELINE(fileptr,buf);

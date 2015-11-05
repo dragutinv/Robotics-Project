@@ -1,0 +1,35 @@
+
+*** Running vivado
+    with args -log tb_pgm.vds -m64 -mode batch -messageDb vivado.pb -notrace -source tb_pgm.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source tb_pgm.tcl -notrace
+Command: synth_design -top tb_pgm -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 262.652 ; gain = 87.609
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2048] function str does not always return a value [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/image_processing_examples-master/hdl/libv.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'tb_pgm' [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/image_processing_examples-master/hdl/pgm.vhd:180]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: access type [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/image_processing_examples-master/hdl/pgm.vhd:183]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: access type [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/image_processing_examples-master/hdl/pgm.vhd:183]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: access type [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/image_processing_examples-master/hdl/pgm.vhd:60]
+ERROR: [Synth 8-27] null value not supported [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/image_processing_examples-master/hdl/pgm.vhd:60]
+ERROR: [Synth 8-421] mismatched array sizes in rhs and lhs of assignment [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/image_processing_examples-master/hdl/pgm.vhd:60]
+ERROR: [Synth 8-285] failed synthesizing module 'tb_pgm' [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/image_processing_examples-master/hdl/pgm.vhd:180]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 296.809 ; gain = 121.766
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 4 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 29 18:44:15 2015...

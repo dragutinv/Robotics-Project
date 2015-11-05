@@ -1,0 +1,2 @@
+vhdl work "../imadder.vhd"
+vhdl work "../imgadder_test.vhd"

@@ -60,20 +60,20 @@ ARCHITECTURE behavior OF test_mean3x3Operation_vhd IS
 	SIGNAL rsync_out :  std_logic;
 	SIGNAL pdata_out :  std_logic_vector(7 downto 0);
 	
-	SIGNAL reset : std_logic;
+	SIGNAL reset : std_logic :=0;
 
 BEGIN
 
 	-- Instantiate the Unit Under Test (UUT)
-	uut: mean3x3Operation PORT MAP(
-		clk => clk,
-		fsync_in => fsync_in,
-		rsync_in => rsync_in,
-		pdata_in => pdata_in,
-		fsync_out => fsync_out,
-		rsync_out => rsync_out,
-		pdata_out => pdata_out
-	);
+	--uut: mean3x3Operation PORT MAP(
+	--	clk => clk,
+	--	fsync_in => fsync_in,
+	--	rsync_in => rsync_in,
+	--	pdata_in => pdata_in,
+	--	fsync_out => fsync_out,
+	--	rsync_out => rsync_out,
+	--	pdata_out => pdata_out
+	--);
 
 	img_read : entity work.img_testbench
 	port map (

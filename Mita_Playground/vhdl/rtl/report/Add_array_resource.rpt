@@ -1,0 +1,51 @@
+//
+// Design Resource Utilization Report
+// Generated on: Sat 31 Oct 2015 11:10:49 +0000
+//
+
+Add_array Total: 
+8    Ands : 8x1 
+1    Register : 1x1 
+1    Or : 1x1 
+2    Nots : 2x1 
+1    Add : 1x9 
+
+Design: Add_array
+-----------------
+Entry: Add_array_untagged_0_instance
+------------------------------------
+    Method: Add_array_untagged_0
+    ----------------------------
+    1    Add : 1x9 
+
+    Method Total:
+    1    Add : 1x9 
+    -------------
+-------------------------------------------
+Entry: Add_array_untagged_0_instance Total: 
+1    Add : 1x9 
+-------------------------------------------
+
+Entry: Add_array_scheduler_instance
+-----------------------------------
+    Method: Add_array_scheduler
+    ---------------------------
+    8    Ands : 8x1 
+    1    Register : 1x1 
+    1    Or : 1x1 
+    2    Nots : 2x1 
+
+    Method Total:
+    8    Ands : 8x1 
+    1    Register : 1x1 
+    1    Or : 1x1 
+    2    Nots : 2x1 
+    -------------
+------------------------------------------
+Entry: Add_array_scheduler_instance Total: 
+8    Ands : 8x1 
+1    Register : 1x1 
+1    Or : 1x1 
+2    Nots : 2x1 
+------------------------------------------
+

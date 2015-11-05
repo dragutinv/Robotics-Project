@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Add_array">
+    <Task name="untagged_0">
+        <Resource MaxGateDepth="26" MaxLatency="0" MinGoSpacing="0" MinLatency="0"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="3" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="0"/>
+    </Task>
+</Design>

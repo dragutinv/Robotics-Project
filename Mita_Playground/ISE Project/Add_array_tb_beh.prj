@@ -1,0 +1,3 @@
+verilog work "../vhdl/rtl/Add_array.v"
+vhdl work "../ISE_ADDER_TB2.vhd"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

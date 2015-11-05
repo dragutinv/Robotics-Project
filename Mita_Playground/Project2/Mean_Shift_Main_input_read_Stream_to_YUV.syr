@@ -1,0 +1,1130 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Mean_Shift_Main_input_read_Stream_to_YUV.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Mean_Shift_Main_input_read_Stream_to_YUV.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Mean_Shift_Main_input_read_Stream_to_YUV"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : Mean_Shift_Main_input_read_Stream_to_YUV
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" into library work
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_doneCount>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_scheduler>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s10>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s1>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s0>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_globalreset_physical_01fd2cba_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_00c903db_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_01d7fe21_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_Kicker_19>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_send>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s3>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_00f07366_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_01b96007_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0046549c_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_000a7b14_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_012ad708_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0122841a_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s2>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_0091ede2_>.
+Parsing module <Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 187: Assignment to getPixValueY_u16 ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 193: Assignment to getPixValueV_u16 ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_doneCount>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 196: Assignment to doneCount_u2 ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 202: Assignment to getPixValueU_u16 ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_scheduler>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 655: Assignment to and_u1481_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 663: Assignment to and_u1486_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 670: Assignment to and_u1492_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 680: Assignment to and_u1498_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 688: Assignment to and_u1504_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 694: Assignment to and_u1509_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 702: Assignment to and_u1514_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 711: Assignment to and_u1521_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 721: Assignment to and_u1527_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 217: Assignment to Mean_Shift_Main_input_read_Stream_to_YUV_scheduler_instance_DONE ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s10>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s1>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s0>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_globalreset_physical_01fd2cba_>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_00c903db_>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 983: Assignment to not_015af794_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 990: Assignment to not_0008662c_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 237: Assignment to bus_018fc434_ ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_01d7fe21_>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1055: Assignment to not_01e00a1b_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1073: Assignment to not_00654dc1_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 244: Assignment to bus_010e5d48_ ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0_>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65>.
+
+Elaborating module <RAMB16_S1(INIT_00=256'b0,INIT_01=256'b0,INIT_02=256'b0,INIT_03=256'b0,INIT_04=256'b0,INIT_05=256'b0,INIT_06=256'b0,INIT_07=256'b0,INIT_08=256'b0,INIT_09=256'b0,INIT_0A=256'b0,INIT_0B=256'b0,INIT_0C=256'b0,INIT_0D=256'b0,INIT_0E=256'b0,INIT_0F=256'b0,INIT_10=256'b0,INIT_11=256'b0,INIT_12=256'b0,INIT_13=256'b0,INIT_14=256'b0,INIT_15=256'b0,INIT_16=256'b0,INIT_17=256'b0,INIT_18=256'b0,INIT_19=256'b0,INIT_1A=256'b0,INIT_1B=256'b0,INIT_1C=256'b0,INIT_1D=256'b0,INIT_1E=256'b0,INIT_1F=256'b0,INIT_20=256'b0,INIT_21=256'b0,INIT_22=256'b0,INIT_23=256'b0,INIT_24=256'b0,INIT_25=256'b0,INIT_26=256'b0,INIT_27=256'b0,INIT_28=256'b0,INIT_29=256'b0,INIT_2A=256'b0,INIT_2B=256'b0,INIT_2C=256'b0,INIT_2D=256'b0,INIT_2E=256'b0,INIT_2F=256'b0,INIT_30=256'b0,INIT_31=256'b0,INIT_32=256'b0,INIT_33=256'b0,INIT_34=256'b0,INIT_35=256'b0,INIT_36=256'b0,INIT_37=256'b0,INIT_38=256'b0,INIT_39=256'b0,INIT_3A=256'b0,INIT_3B=256'b0,INIT_3C=256'b0,INIT_3D=256'b0,INIT_3E=256'b0,INIT_3F=256'b0)>.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1180: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1249: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1318: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1387: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1456: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1525: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1594: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1663: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1732: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1801: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1870: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 1939: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 2008: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 2077: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 2146: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 2215: Size mismatch in connection of port <ADDR>. Formal port size is 14-bit while actual signal size is 32-bit.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_Kicker_19>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_send>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 256: Assignment to send_u84 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 257: Assignment to send_u87 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 258: Assignment to send_u90 ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3_>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s3>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_00f07366_>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 2503: Assignment to endianswapper_00f07366_out ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_01b96007_>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0046549c_>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_000a7b14_>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_012ad708_>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0122841a_>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 2606: Assignment to endianswapper_0122841a_out ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2_>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s2>.
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_0091ede2_>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 2716: Assignment to not_000d95ce_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 2726: Assignment to not_0147bb5b_u0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 295: Assignment to bus_01ba064c_ ignored, since the identifier is never used
+
+Elaborating module <Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize>.
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 298: Assignment to getPictureSize_u6 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" Line 299: Assignment to getPictureSize_u8 ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 2502. All outputs of instance <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_00f07366__1> of block <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_00f07366_> are unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 2605. All outputs of instance <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0122841a__1> of block <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0122841a_> are unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <stream_COUNT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Y_ACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <U_ACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <V_ACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 183: Output port <RESULT_u942> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 189: Output port <RESULT_u948> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 195: Output port <RESULT_u950> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_doneCount_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 198: Output port <RESULT_u955> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 204: Output port <DONE> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_scheduler_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 232: Output port <bus_018fc434_> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_00c903db__1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 239: Output port <bus_010e5d48_> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_01d7fe21__1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 252: Output port <RESULT_u975> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_send_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 252: Output port <RESULT_u978> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_send_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 252: Output port <RESULT_u981> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_send_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 290: Output port <bus_01ba064c_> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_0091ede2__1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 297: Output port <RESULT_u991> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 297: Output port <RESULT_u993> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize_instance> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <port_000b53bc_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <reg_01e526bc_u0>.
+    Found 32-bit adder for signal <add_u434> created at line 338.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <port_018b8472_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <reg_0066ccd4_u0>.
+    Found 32-bit adder for signal <add_u435> created at line 391.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_doneCount>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <reg_01c0b1c6_u0>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_doneCount> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <port_0012b735_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <reg_007c48f4_u0>.
+    Found 32-bit adder for signal <add_u436> created at line 465.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_scheduler>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <port_00fae178_<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_00fae178_<6:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_001f8f84_<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_001f8f84_<6:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_0144b732_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_0110aec6_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_01965555_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_016ff6a8_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_00ccdb66_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_00165ddc_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <reg_0108dfd1_u0> equivalent to <block_GO_delayed_u43> has been removed
+    Found 1-bit register for signal <block_GO_delayed_u43>.
+    Found 1-bit register for signal <reg_0108dfd1_result_delayed_u0>.
+    Found 1-bit register for signal <reg_0025c45a_u0>.
+    Found 1-bit register for signal <reg_0025c45a_result_delayed_u0>.
+    Found 1-bit register for signal <loopControl_u33>.
+    Found 1-bit register for signal <syncEnable_u351_u0>.
+    Found 1-bit register for signal <syncEnable_u352_u0>.
+    Found 1-bit register for signal <syncEnable_u353_u0>.
+    Found 1-bit register for signal <syncEnable_u354_u0>.
+    Found 1-bit register for signal <syncEnable_u355_u0>.
+    Found 1-bit register for signal <syncEnable_u356_u0>.
+    Found 1-bit register for signal <syncEnable_u357_u0>.
+    Found 1-bit register for signal <syncEnable_u358_u0>.
+    Found 1-bit register for signal <syncEnable_u359_u0>.
+    Found 1-bit register for signal <syncEnable_u350>.
+    Found 32x32-bit multiplier for signal <n0132> created at line 647.
+    Found 32-bit comparator equal for signal <equals> created at line 650
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_scheduler> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s10>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <stateVar_state_s10_u4>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s10> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s1>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <stateVar_state_s1_u17>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s1> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s0>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <stateVar_state_s0_u15>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s0> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_globalreset_physical_01fd2cba_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <final_u19>.
+    Found 1-bit register for signal <cross_u19>.
+    Found 1-bit register for signal <sample_u19>.
+    Found 1-bit register for signal <glitch_u19>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_globalreset_physical_01fd2cba_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_00c903db_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_0134722c_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_00c7473d_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <done_qual_u78_u0>.
+    Found 1-bit register for signal <done_qual_u77>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_00c903db_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_01d7fe21_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_0176467c_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_00576b93_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <done_qual_u80_u0>.
+    Found 1-bit register for signal <done_qual_u79_u0>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_01d7fe21_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_013b564e_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 2236: Output port <DONE> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <logicalMem_ba3d04_re_delay0_u0>.
+    Found 1-bit register for signal <logicalMem_ba3d04_we_delay0_u0>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <ren_done>.
+    Found 1-bit register for signal <wen_done>.
+    Found 18-bit register for signal <ADDR_reg<31:14>>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_Kicker_19>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <kicker_2>.
+    Found 1-bit register for signal <kicker_res>.
+    Found 1-bit register for signal <kicker_1>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_Kicker_19> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_send>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <port_017c1041_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_00718fe5_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <port_01ff713b_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <reg_003a5721_u0>.
+    Found 32-bit adder for signal <add_u439> created at line 2379.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_send> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_0164d95c_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 2445: Output port <DONE> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <logicalMem_16c8125_we_delay0_u0>.
+    Found 1-bit register for signal <logicalMem_16c8125_re_delay0_u0>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s3>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <stateVar_state_s3_u9>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s3> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_0080c98f_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 2502: Output port <endianswapper_00f07366_out> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_00f07366__1> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <stateVar_pictureWidthLuma_u2>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_01b96007_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <endianswapper_01b96007_in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <endianswapper_01b96007_in<6:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_01b96007_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_013347e1_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <stateVar_count_u6>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0046549c_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Summary:
+	no macro.
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0046549c_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_000a7b14_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Summary:
+	no macro.
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_000a7b14_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_00c98d67_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 2605: Output port <endianswapper_0122841a_out> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_0122841a__1> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <stateVar_pictureHeightLuma_u2>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_012ad708_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <endianswapper_012ad708_in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <endianswapper_012ad708_in<6:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_endianswapper_012ad708_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_00176c97_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v" line 2640: Output port <DONE> of the instance <Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <logicalMem_b8878a_we_delay0_u0>.
+    Found 1-bit register for signal <logicalMem_b8878a_re_delay0_u0>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s2>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <stateVar_state_s2_u9>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_state_s2> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_0091ede2_>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+WARNING:Xst:647 - Input <bus_00324297_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bus_0105c15c_> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <done_qual_u82_u0>.
+    Found 1-bit register for signal <done_qual_u81_u0>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_0091ede2_> synthesized.
+
+Synthesizing Unit <Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize>.
+    Related source file is "C:\Users\Mita\Documents\VIBOT\Robotic Project\Mita_Playground\VHDL_from_Taner\rtl\Mean_Shift_Main_input_read_Stream_to_YUV.v".
+    Found 1-bit register for signal <reg_002f0fef_u0>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 4
+# Registers                                            : 57
+ 1-bit register                                        : 51
+ 18-bit register                                       : 3
+ 32-bit register                                       : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 8
+ 1-bit 2-to-1 multiplexer                              : 5
+ 32-bit 2-to-1 multiplexer                             : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+INFO:Xst:2261 - The FF/Latch <syncEnable_u352_u0> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV_scheduler_instance> is equivalent to the following 2 FFs/Latches, which will be removed : <syncEnable_u355_u0> <syncEnable_u357_u0> 
+INFO:Xst:2261 - The FF/Latch <stateVar_pictureWidthLuma_u2_4> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma_1> is equivalent to the following 2 FFs/Latches, which will be removed : <stateVar_pictureWidthLuma_u2_5> <stateVar_pictureWidthLuma_u2_7> 
+INFO:Xst:2261 - The FF/Latch <stateVar_pictureHeightLuma_u2_4> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma_1> is equivalent to the following FF/Latch, which will be removed : <stateVar_pictureHeightLuma_u2_7> 
+WARNING:Xst:1426 - The value init of the FF/Latch sample_u19 hinder the constant cleaning in the block Mean_Shift_Main_input_read_Stream_to_YUV_globalreset_physical_01fd2cba__1.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_1> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_2> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_3> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_6> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_1> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_2> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_3> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_5> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_6> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma_1>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_1> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_2> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_3> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureWidthLuma_u2_6> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_1> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_2> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_3> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_5> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+WARNING:Xst:2677 - Node <stateVar_pictureHeightLuma_u2_6> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 9x9-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 4
+# Registers                                            : 142
+ Flip-Flops                                            : 142
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 8
+ 1-bit 2-to-1 multiplexer                              : 5
+ 32-bit 2-to-1 multiplexer                             : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch sample_u19 hinder the constant cleaning in the block Mean_Shift_Main_input_read_Stream_to_YUV_globalreset_physical_01fd2cba_.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <syncEnable_u352_u0> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV_scheduler> is equivalent to the following 2 FFs/Latches, which will be removed : <syncEnable_u355_u0> <syncEnable_u357_u0> 
+INFO:Xst:2261 - The FF/Latch <stateVar_pictureWidthLuma_u2_4> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma> is equivalent to the following 2 FFs/Latches, which will be removed : <stateVar_pictureWidthLuma_u2_5> <stateVar_pictureWidthLuma_u2_7> 
+INFO:Xst:2261 - The FF/Latch <stateVar_pictureHeightLuma_u2_4> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma> is equivalent to the following FF/Latch, which will be removed : <stateVar_pictureHeightLuma_u2_7> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureWidthLuma_1/stateVar_pictureWidthLuma_u2_4> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following FF/Latch, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_pictureHeightLuma_1/stateVar_pictureHeightLuma_u2_4> 
+INFO:Xst:1901 - Instance RAMB16_S1_instance_120 in unit RAMB16_S1_instance_120 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_121 in unit RAMB16_S1_instance_121 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_122 in unit RAMB16_S1_instance_122 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_123 in unit RAMB16_S1_instance_123 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_124 in unit RAMB16_S1_instance_124 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_125 in unit RAMB16_S1_instance_125 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_126 in unit RAMB16_S1_instance_126 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_127 in unit RAMB16_S1_instance_127 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_128 in unit RAMB16_S1_instance_128 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_129 in unit RAMB16_S1_instance_129 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_130 in unit RAMB16_S1_instance_130 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_131 in unit RAMB16_S1_instance_131 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_132 in unit RAMB16_S1_instance_132 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_133 in unit RAMB16_S1_instance_133 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_134 in unit RAMB16_S1_instance_134 of type RAMB16_S1 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAMB16_S1_instance_135 in unit RAMB16_S1_instance_135 of type RAMB16_S1 has been replaced by RAMB18E1
+
+Optimizing unit <Mean_Shift_Main_input_read_Stream_to_YUV> ...
+
+Optimizing unit <Mean_Shift_Main_input_read_Stream_to_YUV_scheduler> ...
+
+Optimizing unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_00c903db_> ...
+
+Optimizing unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_01d7fe21_> ...
+
+Optimizing unit <Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65> ...
+
+Optimizing unit <Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count> ...
+
+Optimizing unit <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_0091ede2_> ...
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueY_instance/reg_01e526bc_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueV_instance/reg_0066ccd4_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/reg_007c48f4_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_doneCount_instance/reg_01c0b1c6_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/logicalMem_ba3d04_re_delay0_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/logicalMem_ba3d04_we_delay0_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/logicalMem_16c8125_we_delay0_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/logicalMem_16c8125_re_delay0_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/logicalMem_b8878a_we_delay0_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/logicalMem_b8878a_re_delay0_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_getPictureSize_instance/reg_002f0fef_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_00c903db__1/done_qual_u78_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_00c903db__1/done_qual_u77> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_01d7fe21__1/done_qual_u80_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_01d7fe21__1/done_qual_u79_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/wen_done> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ren_done> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/wen_done> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ren_done> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/wen_done> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ren_done> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_0091ede2__1/done_qual_u82_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+WARNING:Xst:2677 - Node <Mean_Shift_Main_input_read_Stream_to_YUV_simplememoryreferee_0091ede2__1/done_qual_u81_u0> of sequential type is unconnected in block <Mean_Shift_Main_input_read_Stream_to_YUV>.
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_14> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_14> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_14> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_20> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_20> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_20> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_15> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_15> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_15> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_21> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_21> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_21> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_16> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_16> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_16> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_22> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_22> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_22> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_17> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_17> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_17> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_23> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_23> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_23> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_18> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_18> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_18> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_24> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_24> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_24> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_19> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_19> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_19> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_30> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_30> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_30> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_25> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_25> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_25> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_31> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_31> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_31> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_26> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_26> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_26> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_27> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_27> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_27> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_28> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_28> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_28> 
+INFO:Xst:2261 - The FF/Latch <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/ADDR_reg_29> in Unit <Mean_Shift_Main_input_read_Stream_to_YUV> is equivalent to the following 2 FFs/Latches, which will be removed : <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/ADDR_reg_29> <Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/ADDR_reg_29> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Mean_Shift_Main_input_read_Stream_to_YUV, actual ratio is 0.
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_0 has been replicated 1 time(s)
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_1 has been replicated 1 time(s)
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_2 has been replicated 1 time(s)
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_3 has been replicated 1 time(s)
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_4 has been replicated 1 time(s)
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_5 has been replicated 1 time(s)
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_6 has been replicated 1 time(s)
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_7 has been replicated 1 time(s)
+FlipFlop Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_8 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <Mean_Shift_Main_input_read_Stream_to_YUV> :
+	Found 2-bit shift register for signal <Mean_Shift_Main_input_read_Stream_to_YUV_globalreset_physical_01fd2cba__1/cross_u19>.
+Unit <Mean_Shift_Main_input_read_Stream_to_YUV> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Mean_Shift_Main_input_read_Stream_to_YUV.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 643
+#      GND                         : 49
+#      INV                         : 5
+#      LUT1                        : 124
+#      LUT2                        : 5
+#      LUT3                        : 2
+#      LUT4                        : 41
+#      LUT5                        : 67
+#      LUT6                        : 42
+#      MUXCY                       : 131
+#      VCC                         : 49
+#      XORCY                       : 128
+# FlipFlops/Latches                : 85
+#      FD                          : 23
+#      FDC                         : 6
+#      FDCE                        : 47
+#      FDE                         : 9
+# RAMS                             : 48
+#      RAMB18E1                    : 48
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 89
+#      IBUF                        : 13
+#      OBUF                        : 76
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              85  out of  126800     0%  
+ Number of Slice LUTs:                  287  out of  63400     0%  
+    Number used as Logic:               286  out of  63400     0%  
+    Number used as Memory:                1  out of  19000     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    372
+   Number with an unused Flip Flop:     287  out of    372    77%  
+   Number with an unused LUT:            85  out of    372    22%  
+   Number of fully used LUT-FF pairs:     0  out of    372     0%  
+   Number of unique control sets:        13
+
+IO Utilization: 
+ Number of IOs:                         109
+ Number of bonded IOBs:                  90  out of    210    42%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               24  out of    135    17%  
+    Number using Block RAM only:         24
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                              | Clock buffer(FF name)                                                                                                                                                                               | Load  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+CLK                                                                                                                                                                       | BUFGP                                                                                                                                                                                               | 134   |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_135/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_134/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_133/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_132/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_131/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_130/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_129/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_128/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_127/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_126/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_125/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_124/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_123/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_122/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_121/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_120/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_134/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_133/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_132/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_131/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_130/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_129/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_128/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_127/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_126/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_125/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_124/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_123/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_122/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_121/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_120/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_135/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_134/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_133/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_132/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_131/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_130/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_129/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_128/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_127/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_126/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_125/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_124/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_123/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_122/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_121/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 1     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_120/N0| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 1     |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                                                                                | Buffer(FF name)                                                                                                                                                                                     | Load  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_120/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_120/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_121/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_121/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_122/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_122/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_123/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_123/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_124/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_124/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_125/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_125/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_126/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_126/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_127/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_127/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_128/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_128/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_129/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_129/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_130/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_130/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_131/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_131/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_132/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_132/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_133/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_133/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_134/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_134/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_135/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_135/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_120/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_120/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_121/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_121/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_122/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_122/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_123/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_123/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_124/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_124/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_125/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_125/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_126/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_126/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_127/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_127/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_128/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_128/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_129/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_129/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_130/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_130/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_131/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_131/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_132/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_132/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_133/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_133/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_134/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_134/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_120/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_120/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_121/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_121/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_122/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_122/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_123/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_123/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_124/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_124/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_125/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_125/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_126/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_126/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_127/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_127/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_128/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_128/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_129/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_129/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_130/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_130/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_131/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_131/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_132/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_132/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_133/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_133/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_134/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_134/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_135/N0(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_135/XST_GND:G) | NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 12    |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_120/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_120/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_121/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_121/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_122/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_122/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_123/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_123/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_124/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_124/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_125/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_125/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_126/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_126/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_127/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_127/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_128/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_128/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_129/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_129/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_130/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_130/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_131/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_131/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_132/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_132/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_133/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_133/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_134/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_134/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_135/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_135/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_011cd3c0__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance0/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_120/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_120/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_121/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_121/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_122/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_122/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_123/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_123/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_124/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_124/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_125/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_125/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_126/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_126/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_127/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_127/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_128/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_128/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_129/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_129/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_130/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_130/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_131/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_131/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_132/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_132/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_133/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_133/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_134/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_134/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_120/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_120/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_120/RAMB16_S1_instance_120)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_121/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_121/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_121/RAMB16_S1_instance_121)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_122/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_122/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_122/RAMB16_S1_instance_122)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_123/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_123/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_123/RAMB16_S1_instance_123)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_124/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_124/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_124/RAMB16_S1_instance_124)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_125/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_125/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_125/RAMB16_S1_instance_125)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_126/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_126/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_126/RAMB16_S1_instance_126)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_127/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_127/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_127/RAMB16_S1_instance_127)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_128/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_128/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_128/RAMB16_S1_instance_128)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_129/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_129/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_129/RAMB16_S1_instance_129)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_130/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_130/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_130/RAMB16_S1_instance_130)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_131/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_131/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_131/RAMB16_S1_instance_131)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_132/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_132/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_132/RAMB16_S1_instance_132)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_133/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_133/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_133/RAMB16_S1_instance_133)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_134/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_134/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_134/RAMB16_S1_instance_134)| 8     |
+Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_135/N11(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_135/XST_VCC:P)| NONE(Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_014603c2__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance2/RAMB16_S1_instance_135/RAMB16_S1_instance_135)| 8     |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.272ns (Maximum Frequency: 305.640MHz)
+   Minimum input arrival time before clock: 2.387ns
+   Maximum output required time after clock: 3.000ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.272ns (frequency: 305.640MHz)
+  Total number of paths / destination ports: 7272 / 1055
+-------------------------------------------------------------------------
+Delay:               3.272ns (Levels of Logic = 35)
+  Source:            Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_0 (FF)
+  Destination:       Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_31 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_0 to Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            52   0.361   0.473  Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_0 (Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_0)
+     INV:I->O              1   0.113   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_lut<0>_INV_0 (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<0> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<1> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<2> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<3> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<4> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<5> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<6> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<7> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<8> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<9> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<10> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<11> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<12> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<13> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<14> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<15> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<16> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<17> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<18> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<19> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<20> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<21> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<22> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<23> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<24> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<25> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<26> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<27> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<28> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<29> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<30> (Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_cy<30>)
+     XORCY:CI->O           1   0.370   0.355  Mean_Shift_Main_input_read_Stream_to_YUV_getPixValueU_instance/Madd_add_u436_xor<31> (getPixValueU_u12<31>)
+     LUT4:I3->O            1   0.097   0.355  Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/mux_01d973bc_u0<31>_SW0 (N62)
+     LUT5:I4->O            1   0.097   0.000  Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/mux_01d973bc_u0<31> (Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/mux_01d973bc_u0<31>)
+     FDCE:D                    0.008          Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_31
+    ----------------------------------------
+    Total                      3.272ns (2.089ns logic, 1.183ns route)
+                                       (63.8% logic, 36.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 498 / 236
+-------------------------------------------------------------------------
+Offset:              2.387ns (Levels of Logic = 3)
+  Source:            Y_RDY (PAD)
+  Destination:       Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_31 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Y_RDY to Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.753  Y_RDY_IBUF (Y_RDY_IBUF)
+     LUT6:I0->O           37   0.097   0.874  Mean_Shift_Main_input_read_Stream_to_YUV_scheduler_instance/and_u1528_u01 (scheduler_u228)
+     LUT6:I1->O           41   0.097   0.470  Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/or_0175b939_u0 (Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/or_0175b939_u0)
+     FDCE:CE                   0.095          Mean_Shift_Main_input_read_Stream_to_YUV_stateVar_count_1/stateVar_count_u6_0
+    ----------------------------------------
+    Total                      2.387ns (0.290ns logic, 2.097ns route)
+                                       (12.1% logic, 87.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 489 / 28
+-------------------------------------------------------------------------
+Offset:              3.000ns (Levels of Logic = 3)
+  Source:            Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/RAMB16_S1_instance_135 (RAM)
+  Destination:       V_DATA<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135/RAMB16_S1_instance_135 to V_DATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO0    1   2.125   0.439  RAMB16_S1_instance_135 (DO0)
+     end scope: 'Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/RAMB16_S1_instance_135:DO0'
+     LUT6:I4->O            1   0.097   0.339  Mean_Shift_Main_input_read_Stream_to_YUV_structuralmemory_012054b3__1/Mean_Shift_Main_input_read_Stream_to_YUV_forge_memory_25344x8_65_instance1/mux_out<0>1 (bus_01e7311b_<7>)
+     OBUF:I->O                 0.000          V_DATA_7_OBUF (V_DATA<7>)
+    ----------------------------------------
+    Total                      3.000ns (2.222ns logic, 0.778ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.272|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 58.00 secs
+Total CPU time to Xst completion: 57.79 secs
+ 
+--> 
+
+Total memory usage is 866652 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  132 (   0 filtered)
+Number of infos    :   60 (   0 filtered)
+

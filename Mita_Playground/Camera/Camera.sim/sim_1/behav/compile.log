@@ -1,9 +1,16 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity camera
-ERROR: [VRFC 10-91] std_logic_vector is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:9]
-ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:10]
-ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:11]
-ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:12]
-ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:13]
-ERROR: [VRFC 10-1504] unit camera ignored due to previous errors [C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd:1]
-INFO: [VRFC 10-240] VHDL file C:/Users/Mita/Documents/VIBOT/RP_test/camera.vhd ignored due to errors
+ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:4]
+ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:5]
+ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:6]
+ERROR: [VRFC 10-91] std_logic is not declared [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:7]
+ERROR: [VRFC 10-124] clk should be a constant [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:4]
+ERROR: [VRFC 10-533] constant clk can only be of mode IN [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:4]
+ERROR: [VRFC 10-124] n_hs should be a constant [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:5]
+ERROR: [VRFC 10-533] constant n_hs can only be of mode IN [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:5]
+ERROR: [VRFC 10-124] n_vs should be a constant [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:6]
+ERROR: [VRFC 10-533] constant n_vs can only be of mode IN [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:6]
+ERROR: [VRFC 10-124] dv should be a constant [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:7]
+ERROR: [VRFC 10-533] constant dv can only be of mode IN [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:7]
+ERROR: [VRFC 10-1504] unit camera ignored due to previous errors [C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd:1]
+INFO: [VRFC 10-240] VHDL file C:/Users/Mita/Documents/VIBOT/Robotic Project/Mita_Playground/camera.vhd ignored due to errors

@@ -1,0 +1,2 @@
+vhdl isim_temp "../imadder.vhd"
+vhdl isim_temp "../imgadder_test.vhd"
