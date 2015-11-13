@@ -1,0 +1,167 @@
+/*
+ * Copyright (c) 2014, Project: Rathlin, Heriot-Watt University, Edinburgh, UK
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 
+ *   * Redistributions of source code must retain the above copyright notice,
+ *     this list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of the Heriot-Watt University nor the names of its
+ *     contributors may be used to endorse or promote products derived from this
+ *     software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+ * WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ */
+  
+// Author: Deepayan Bhowmik <d.bhowmik@hw.ac.uk> 
+package std.util;
+import std.header.Parameter.*;
+
+actor drawRectangle() uint(size=8) Rin, uint(size=8) Gin, uint(size=8) Bin, int center_x, int center_y, bool loop_stat ==> 
+				uint(size=8) Rout, uint(size=8) Gout, uint(size=8) Bout:
+	
+	uint(size=16) centre_x;
+	uint(size=16) centre_y;
+	bool while_loop_term_status := false;
+	
+	/*Get centre xy*/
+	getCenterXYinit: action ==>
+	do
+		centre_x := CENTRE_X;
+		centre_y := CENTRE_Y;
+		while_loop_term_status := false;			
+	end
+	
+	/*Get centre xy*/
+	getCenterXY: action center_x:[X], center_y:[Y]  ==>	
+	do
+		centre_x := X;
+		centre_y := Y;								
+	end
+	
+	is_final_XY: action loop_stat:[loop_stat_val] ==>
+	do 
+		while_loop_term_status := loop_stat_val;		
+	end
+	
+	got_final_XY: action ==>
+	guard while_loop_term_status = true
+	do
+		while_loop_term_status := false;
+	end	
+	
+	/* Get RGB value in the buffer */
+	int count_x := 0;
+	int count_y := 0;
+		
+	uint(size=8)  bufferR[IM_HEIGHT][IM_WIDTH];
+	uint(size=8)  bufferG[IM_HEIGHT][IM_WIDTH];
+	uint(size=8)  bufferB[IM_HEIGHT][IM_WIDTH];	
+	getValueRGB: action Rin:[BytesR], Gin:[BytesG], Bin:[BytesB] ==>	
+	do
+		bufferR[count_x][count_y] := BytesR;
+		bufferG[count_x][count_y] := BytesG;
+		bufferB[count_x][count_y] := BytesB;
+		
+		count_y := count_y + 1;
+				
+		if(count_y = IM_WIDTH) then
+			count_y := 0;
+			count_x := count_x + 1;
+		end										
+	end
+	
+    doneCountIm: action ==> 
+	guard count_x = IM_HEIGHT
+	do
+		count_x := 0;				
+	end			
+	
+	int dummy_count :=0;
+	drawRectangle: action ==>
+	var int x1,
+		int y1,
+		int x2,
+		int y2	
+	do
+		dummy_count := dummy_count + 1;
+		println("Frame number " + dummy_count);
+		x1 := centre_x - HALF_X;
+		y1 := centre_y - HALF_Y;
+        x2 := centre_x + HALF_X;
+        y2 := centre_y + HALF_Y;
+                      
+        foreach int x in x1 .. x2 do
+        	bufferR[y1][x] := 255;
+        	bufferG[y1][x] := 0;
+        	bufferB[y1][x] := 0;
+        	
+        	bufferR[y2][x] := 255;
+        	bufferG[y2][x] := 0;
+        	bufferB[y2][x] := 0;	
+        end
+        
+        foreach int y in y1 .. y2 do
+        	bufferR[y][x1] := 255;
+        	bufferG[y][x1] := 0;
+        	bufferB[y][x1] := 0;
+        	
+        	bufferR[y][x2] := 255;
+        	bufferG[y][x2] := 0;
+        	bufferB[y][x2] := 0;	
+        end  
+                    
+	end
+
+	send: action ==> Rout:[Rval], Gout:[Gval], Bout:[Bval]
+	var uint(size=8) Rval,
+		uint(size=8) Gval,
+		uint(size=8) Bval
+	do
+		Rval := bufferR[count_x][count_y];
+		Gval := bufferG[count_x][count_y];
+		Bval := bufferB[count_x][count_y];
+		
+		count_y := count_y + 1;		
+		if(count_y = IM_WIDTH) then
+			count_y := 0;
+			count_x := count_x + 1;
+		end				
+	end 	
+
+	schedule fsm s0 :			
+		s0  (getValueRGB) --> s0;
+		s0  (doneCountIm ) --> s1;
+		s1  (getCenterXYinit) --> s5;			
+		//-----------
+		s2  (getValueRGB) --> s2;
+		s2  (doneCountIm ) --> s3;	
+		s3  (is_final_XY ) --> s3;
+		s3  (got_final_XY) --> s4;					
+		s4  (getCenterXY) --> s5;							
+		s5  (drawRectangle) --> s6;
+		s6  (send)-->s6;
+		s6  (doneCountIm)-->s2;
+	end
+	
+	priority
+		doneCountIm > getValueRGB;
+		got_final_XY > is_final_XY;		
+		doneCountIm > send;
+	end
+	
+end 				 

@@ -1,0 +1,47 @@
+package std.header;
+
+unit Parameter:
+//---------------------------------------------
+// Image size information 
+	uint(size=16) IM_WIDTH = 176;
+	uint(size=16) IM_HEIGHT = 144;
+	
+// Tracking window parameters	
+	uint(size=16) RECT_WIDTH = 20;	
+	uint(size=16) RECT_HEIGHT = 26;
+	uint(size=16) CENTRE_X = 159;
+	uint(size=16) CENTRE_Y = 76;
+//----------------------------------------------
+
+//// Image size information 
+//	int IM_WIDTH = 384;
+//	int IM_HEIGHT = 288;
+//	
+//// Tracking window parameters	
+//	int RECT_WIDTH = 20;	
+//	int RECT_HEIGHT = 46;
+//	int CENTRE_X = 337;
+//	int CENTRE_Y = 156;
+
+//-----------------------------------------------
+//	uint(size=16) IM_WIDTH = 768;
+//	uint(size=16) IM_HEIGHT = 576;
+//	
+//// Tracking window parameters	
+//	uint(size=16) RECT_WIDTH = 108;	
+//	uint(size=16) RECT_HEIGHT = 48;
+//	uint(size=16) CENTRE_X = 678;
+//	uint(size=16) CENTRE_Y = 314;
+//------------------------------------------------
+	
+	int HALF_X = RECT_WIDTH/2;
+	int HALF_Y = RECT_HEIGHT/2;
+	
+	int X_SIZE = 2*HALF_X + 1;
+	int Y_SIZE = 2*HALF_Y + 1;
+	
+// Color model parameters		
+	int BPC = 16;                //bins per colour
+	int BINSIZE = 16;            //size of each bin MUST BE BPC/256
+	int NUMBINS = BPC*BPC*BPC;   //total number of bins
+end

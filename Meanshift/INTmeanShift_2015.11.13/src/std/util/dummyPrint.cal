@@ -1,0 +1,12 @@
+package std.util;
+
+actor dummyPrint() int x, int y ==> :
+
+int count :=0;
+printXY: action x:[Val_x], y:[Val_y] ==>
+do
+	count := count + 1;
+	//println("frame " + count + " : " + Val_x + " " + Val_y );
+end
+
+end

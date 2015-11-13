@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="TopMeanShift">
+    <Instance id="source">
+        <Class name="std.stdio.Source_read"/>
+    </Instance>
+    <Instance id="Mean_Shift_Main">
+        <Class name="xdf.MeanShiftMain"/>
+    </Instance>
+    <Instance id="Outout_main">
+        <Class name="xdf.Output"/>
+    </Instance>
+    <Instance id="End_of_str">
+        <Class name="std.stdio.EndOfStream"/>
+    </Instance>
+    <Instance id="Write_file">
+        <Class name="std.stdio.Writer"/>
+    </Instance>
+    <Connection dst="Mean_Shift_Main" dst-port="input_port" src="source" src-port="O"/>
+    <Connection dst="Outout_main" dst-port="X" src="Mean_Shift_Main" src-port="X_out"/>
+    <Connection dst="Outout_main" dst-port="Y" src="Mean_Shift_Main" src-port="Y_out"/>
+    <Connection dst="Outout_main" dst-port="loop" src="Mean_Shift_Main" src-port="loop"/>
+    <Connection dst="Outout_main" dst-port="R" src="Mean_Shift_Main" src-port="R"/>
+    <Connection dst="Outout_main" dst-port="G" src="Mean_Shift_Main" src-port="G"/>
+    <Connection dst="Outout_main" dst-port="B" src="Mean_Shift_Main" src-port="B"/>
+    <Connection dst="Write_file" dst-port="Byte" src="End_of_str" src-port="Out"/>
+    <Connection dst="Write_file" dst-port="pEOF" src="End_of_str" src-port="pEOF"/>
+    <Connection dst="End_of_str" dst-port="In" src="Outout_main" src-port="yuv_out"/>
+</XDF>
