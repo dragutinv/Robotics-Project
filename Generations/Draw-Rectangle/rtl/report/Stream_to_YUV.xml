@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Stream_to_YUV">
+    <Task name="getPixValueY">
+        <Resource MaxGateDepth="191" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="getPixValueU">
+        <Resource MaxGateDepth="191" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="getPixValueV">
+        <Resource MaxGateDepth="191" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="doneCount">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="9" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="2"/>
+    </Task>
+</Design>

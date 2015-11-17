@@ -1,0 +1,73 @@
+//
+// Design Resource Utilization Report
+// Generated on: Tue 17 Nov 2015 18:39:11 +0000
+//
+
+YUV_to_RGB Total: 
+35   Ands : 35x1 
+1    Or : 1x1 
+5    Subtracts : 2x64 3x9 
+3    Less Thans : 3x32 
+3    Greater Thans : 3x32 
+1    Register : 1x1 
+23   Adds : 23x64 
+6    Muxs : 6x8 
+8    Nots : 8x1 
+
+Design: YUV_to_RGB
+------------------
+Entry: YUV_to_RGB_untagged_0_instance
+-------------------------------------
+    Method: YUV_to_RGB_untagged_0
+    -----------------------------
+    24   Ands : 24x1 
+    3    Less Thans : 3x32 
+    5    Subtracts : 2x64 3x9 
+    3    Greater Thans : 3x32 
+    23   Adds : 23x64 
+    6    Muxs : 6x8 
+    6    Nots : 6x1 
+
+    Method Total:
+    24   Ands : 24x1 
+    3    Less Thans : 3x32 
+    5    Subtracts : 2x64 3x9 
+    3    Greater Thans : 3x32 
+    23   Adds : 23x64 
+    6    Muxs : 6x8 
+    6    Nots : 6x1 
+    -------------
+--------------------------------------------
+Entry: YUV_to_RGB_untagged_0_instance Total: 
+24   Ands : 24x1 
+3    Less Thans : 3x32 
+5    Subtracts : 2x64 3x9 
+3    Greater Thans : 3x32 
+23   Adds : 23x64 
+6    Muxs : 6x8 
+6    Nots : 6x1 
+--------------------------------------------
+
+Entry: YUV_to_RGB_scheduler_instance
+------------------------------------
+    Method: YUV_to_RGB_scheduler
+    ----------------------------
+    11   Ands : 11x1 
+    1    Or : 1x1 
+    1    Register : 1x1 
+    2    Nots : 2x1 
+
+    Method Total:
+    11   Ands : 11x1 
+    1    Or : 1x1 
+    1    Register : 1x1 
+    2    Nots : 2x1 
+    -------------
+-------------------------------------------
+Entry: YUV_to_RGB_scheduler_instance Total: 
+11   Ands : 11x1 
+1    Or : 1x1 
+1    Register : 1x1 
+2    Nots : 2x1 
+-------------------------------------------
+

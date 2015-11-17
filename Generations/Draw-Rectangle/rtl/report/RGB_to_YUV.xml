@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="RGB_to_YUV">
+    <Task name="untagged_0">
+        <Resource MaxGateDepth="1370" MaxLatency="0" MinGoSpacing="0" MinLatency="0"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="4" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="0"/>
+    </Task>
+</Design>

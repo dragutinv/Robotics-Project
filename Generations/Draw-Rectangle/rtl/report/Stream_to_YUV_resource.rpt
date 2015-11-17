@@ -1,0 +1,132 @@
+//
+// Design Resource Utilization Report
+// Generated on: Tue 17 Nov 2015 18:39:14 +0000
+//
+
+Stream_to_YUV Total: 
+1    Equal To : 1x32 
+45   Ands : 45x1 
+11   Ors : 11x1 
+2    Memorys : 2x8 
+23   Registers : 23x1 
+7    Adds : 3x64 4x32 
+6    Muxs : 6x1 
+10   Nots : 10x1 
+
+Design: Stream_to_YUV
+---------------------
+Entry: Stream_to_YUV_getPixValueY_instance
+------------------------------------------
+    Method: Stream_to_YUV_getPixValueY
+    ----------------------------------
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+
+    Method Total:
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    -------------
+-------------------------------------------------
+Entry: Stream_to_YUV_getPixValueY_instance Total: 
+1    And : 1x1 
+1    Or : 1x1 
+2    Registers : 2x1 
+2    Adds : 1x64 1x32 
+-------------------------------------------------
+
+Entry: Stream_to_YUV_getPixValueU_instance
+------------------------------------------
+    Method: Stream_to_YUV_getPixValueU
+    ----------------------------------
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+
+    Method Total:
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    -------------
+-------------------------------------------------
+Entry: Stream_to_YUV_getPixValueU_instance Total: 
+1    And : 1x1 
+1    Or : 1x1 
+2    Registers : 2x1 
+2    Adds : 1x64 1x32 
+-------------------------------------------------
+
+Entry: Stream_to_YUV_getPixValueV_instance
+------------------------------------------
+    Method: Stream_to_YUV_getPixValueV
+    ----------------------------------
+    2    Ands : 2x1 
+    2    Ors : 2x1 
+    3    Registers : 3x1 
+    2    Memorys : 2x8 
+    3    Adds : 1x64 2x32 
+
+    Method Total:
+    2    Ands : 2x1 
+    2    Ors : 2x1 
+    3    Registers : 3x1 
+    2    Memorys : 2x8 
+    3    Adds : 1x64 2x32 
+    -------------
+-------------------------------------------------
+Entry: Stream_to_YUV_getPixValueV_instance Total: 
+2    Ands : 2x1 
+2    Ors : 2x1 
+3    Registers : 3x1 
+2    Memorys : 2x8 
+3    Adds : 1x64 2x32 
+-------------------------------------------------
+
+Entry: Stream_to_YUV_doneCount_instance
+---------------------------------------
+    Method: Stream_to_YUV_doneCount
+    -------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+----------------------------------------------
+Entry: Stream_to_YUV_doneCount_instance Total: 
+1    Register : 1x1 
+----------------------------------------------
+
+Entry: Stream_to_YUV_scheduler_instance
+---------------------------------------
+    Method: Stream_to_YUV_scheduler
+    -------------------------------
+    1    Equal To : 1x32 
+    41   Ands : 41x1 
+    7    Ors : 7x1 
+    15   Registers : 15x1 
+    6    Muxs : 6x1 
+    10   Nots : 10x1 
+
+    Method Total:
+    1    Equal To : 1x32 
+    41   Ands : 41x1 
+    7    Ors : 7x1 
+    15   Registers : 15x1 
+    6    Muxs : 6x1 
+    10   Nots : 10x1 
+    -------------
+----------------------------------------------
+Entry: Stream_to_YUV_scheduler_instance Total: 
+1    Equal To : 1x32 
+41   Ands : 41x1 
+7    Ors : 7x1 
+15   Registers : 15x1 
+6    Muxs : 6x1 
+10   Nots : 10x1 
+----------------------------------------------
+

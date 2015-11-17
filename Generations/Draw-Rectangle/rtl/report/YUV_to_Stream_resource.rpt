@@ -1,0 +1,199 @@
+//
+// Design Resource Utilization Report
+// Generated on: Tue 17 Nov 2015 18:39:16 +0000
+//
+
+YUV_to_Stream Total: 
+58   Ands : 58x1 
+28   Registers : 28x1 
+1    Memory : 1x8 
+12   Adds : 8x64 4x32 
+10   Muxs : 10x1 
+4    Multiplys : 4x32 
+13   Nots : 13x1 
+2    Equal Tos : 1x64 1x32 
+15   Ors : 15x1 
+
+Design: YUV_to_Stream
+---------------------
+Entry: YUV_to_Stream_getPictureSize_instance
+--------------------------------------------
+    Method: YUV_to_Stream_getPictureSize
+    ------------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+---------------------------------------------------
+Entry: YUV_to_Stream_getPictureSize_instance Total: 
+1    Register : 1x1 
+---------------------------------------------------
+
+Entry: YUV_to_Stream_getPixValueY_instance
+------------------------------------------
+    Method: YUV_to_Stream_getPixValueY
+    ----------------------------------
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+
+    Method Total:
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    2    Adds : 1x64 1x32 
+    -------------
+-------------------------------------------------
+Entry: YUV_to_Stream_getPixValueY_instance Total: 
+1    And : 1x1 
+1    Or : 1x1 
+2    Registers : 2x1 
+2    Adds : 1x64 1x32 
+-------------------------------------------------
+
+Entry: YUV_to_Stream_getPixValueU_instance
+------------------------------------------
+    Method: YUV_to_Stream_getPixValueU
+    ----------------------------------
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    3    Adds : 2x64 1x32 
+    1    Multiply : 1x32 
+
+    Method Total:
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    3    Adds : 2x64 1x32 
+    1    Multiply : 1x32 
+    -------------
+-------------------------------------------------
+Entry: YUV_to_Stream_getPixValueU_instance Total: 
+1    And : 1x1 
+1    Or : 1x1 
+2    Registers : 2x1 
+3    Adds : 2x64 1x32 
+1    Multiply : 1x32 
+-------------------------------------------------
+
+Entry: YUV_to_Stream_getPixValueV_instance
+------------------------------------------
+    Method: YUV_to_Stream_getPixValueV
+    ----------------------------------
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    3    Adds : 2x64 1x32 
+    1    Multiply : 1x32 
+
+    Method Total:
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    3    Adds : 2x64 1x32 
+    1    Multiply : 1x32 
+    -------------
+-------------------------------------------------
+Entry: YUV_to_Stream_getPixValueV_instance Total: 
+1    And : 1x1 
+1    Or : 1x1 
+2    Registers : 2x1 
+3    Adds : 2x64 1x32 
+1    Multiply : 1x32 
+-------------------------------------------------
+
+Entry: YUV_to_Stream_doneCount_instance
+---------------------------------------
+    Method: YUV_to_Stream_doneCount
+    -------------------------------
+    1    Register : 1x1 
+
+    Method Total:
+    1    Register : 1x1 
+    -------------
+----------------------------------------------
+Entry: YUV_to_Stream_doneCount_instance Total: 
+1    Register : 1x1 
+----------------------------------------------
+
+Entry: YUV_to_Stream_doneCountYUV_instance
+------------------------------------------
+    Method: YUV_to_Stream_doneCountYUV
+    ----------------------------------
+    1    Register : 1x1 
+    1    Add : 1x64 
+
+    Method Total:
+    1    Register : 1x1 
+    1    Add : 1x64 
+    -------------
+-------------------------------------------------
+Entry: YUV_to_Stream_doneCountYUV_instance Total: 
+1    Register : 1x1 
+1    Add : 1x64 
+-------------------------------------------------
+
+Entry: YUV_to_Stream_send_instance
+----------------------------------
+    Method: YUV_to_Stream_send
+    --------------------------
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    1    Memory : 1x8 
+    2    Adds : 1x64 1x32 
+
+    Method Total:
+    1    And : 1x1 
+    1    Or : 1x1 
+    2    Registers : 2x1 
+    1    Memory : 1x8 
+    2    Adds : 1x64 1x32 
+    -------------
+-----------------------------------------
+Entry: YUV_to_Stream_send_instance Total: 
+1    And : 1x1 
+1    Or : 1x1 
+2    Registers : 2x1 
+1    Memory : 1x8 
+2    Adds : 1x64 1x32 
+-----------------------------------------
+
+Entry: YUV_to_Stream_scheduler_instance
+---------------------------------------
+    Method: YUV_to_Stream_scheduler
+    -------------------------------
+    2    Equal Tos : 1x64 1x32 
+    54   Ands : 54x1 
+    11   Ors : 11x1 
+    17   Registers : 17x1 
+    1    Add : 1x64 
+    10   Muxs : 10x1 
+    2    Multiplys : 2x32 
+    13   Nots : 13x1 
+
+    Method Total:
+    2    Equal Tos : 1x64 1x32 
+    54   Ands : 54x1 
+    11   Ors : 11x1 
+    17   Registers : 17x1 
+    1    Add : 1x64 
+    10   Muxs : 10x1 
+    2    Multiplys : 2x32 
+    13   Nots : 13x1 
+    -------------
+----------------------------------------------
+Entry: YUV_to_Stream_scheduler_instance Total: 
+2    Equal Tos : 1x64 1x32 
+54   Ands : 54x1 
+11   Ors : 11x1 
+17   Registers : 17x1 
+1    Add : 1x64 
+10   Muxs : 10x1 
+2    Multiplys : 2x32 
+13   Nots : 13x1 
+----------------------------------------------
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design name="Generation">
+    <Task name="getValueRGB">
+        <Resource MaxGateDepth="380" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="doneCountIm">
+        <Resource MaxGateDepth="0" MaxLatency="1" MinGoSpacing="1" MinLatency="1"/>
+    </Task>
+    <Task name="drawRectangle">
+        <Resource MaxGateDepth="380" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="1"/>
+    </Task>
+    <Task name="send">
+        <Resource MaxGateDepth="380" MaxLatency="2" MinGoSpacing="2" MinLatency="2"/>
+    </Task>
+    <Task name="scheduler">
+        <Resource MaxGateDepth="8" MaxLatency="unknown"
+            MinGoSpacing="indeterminate" MinLatency="2"/>
+    </Task>
+</Design>
