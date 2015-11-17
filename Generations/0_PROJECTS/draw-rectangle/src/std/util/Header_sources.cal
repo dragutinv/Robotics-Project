@@ -1,0 +1,17 @@
+/* Actor: sources predefined parameters to provide input to other actors.
+ * */
+
+package std.util;
+import std.header.Parameter.*;
+
+actor Header_sources() ==> int centre_x, int centre_y:
+
+	action ==> centre_x:[X], centre_y:[Y]
+	var int X,
+		int Y
+	do
+		X := CENTRE_X;
+		Y := CENTRE_Y;		
+	end
+
+end

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="Process">
+    <Port kind="Input" name="R">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Input" name="G">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Input" name="B">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Output" name="Ro">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Output" name="Go">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Output" name="Bo">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Instance id="PROCESS">
+        <Class name="std.util.drawRectangle"/>
+    </Instance>
+    <Connection dst="PROCESS" dst-port="Rin" src="" src-port="R"/>
+    <Connection dst="PROCESS" dst-port="Gin" src="" src-port="G"/>
+    <Connection dst="PROCESS" dst-port="Bin" src="" src-port="B"/>
+    <Connection dst="" dst-port="Ro" src="PROCESS" src-port="Rout"/>
+    <Connection dst="" dst-port="Go" src="PROCESS" src-port="Gout"/>
+    <Connection dst="" dst-port="Bo" src="PROCESS" src-port="Bout"/>
+</XDF>

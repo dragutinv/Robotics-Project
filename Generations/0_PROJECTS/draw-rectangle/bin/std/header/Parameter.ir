@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net.sf.orcc.df:Unit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:net.sf.orcc.df="http://orcc.sf.net/model/2011/Df" xmlns:net.sf.orcc.ir="http://orcc.sf.net/model/2011/Ir"
+    fileName="/draw-rectangle/src/std/header/Parameter.cal" lineNumber="3"
+    name="std.header.Parameter">
+  <constants lineNumber="6" name="IM_WIDTH">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="320">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="9"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+  </constants>
+  <constants lineNumber="7" name="IM_HEIGHT">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="240">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+  </constants>
+  <constants lineNumber="10" name="RECT_WIDTH">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="20">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+  </constants>
+  <constants lineNumber="11" name="RECT_HEIGHT">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="30">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+  </constants>
+  <constants lineNumber="12" name="CENTRE_X">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+  </constants>
+  <constants lineNumber="13" name="CENTRE_Y">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+  </constants>
+  <constants lineNumber="15" name="HALF_X">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+  </constants>
+  <constants lineNumber="16" name="HALF_Y">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="15">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+  </constants>
+</net.sf.orcc.df:Unit>

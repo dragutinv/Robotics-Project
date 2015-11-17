@@ -1,0 +1,188 @@
+/*
+ * Copyright (c) 2014, Project: Rathlin, Heriot-Watt University, Edinburgh, UK
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 
+ *   * Redistributions of source code must retain the above copyright notice,
+ *     this list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of the Heriot-Watt University nor the names of its
+ *     contributors may be used to endorse or promote products derived from this
+ *     software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+ * WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ */
+  
+// Author: Deepayan Bhowmik <d.bhowmik@hw.ac.uk> 
+
+package std.stdio;
+import std.header.Parameter.*;
+
+actor StreamToYUV() uint(size=8) stream ==> int(size=8) Y, int(size=8) U, int(size=8) V: 
+
+	int (size=16) pictureWidthLuma;
+	int (size=16) pictureHeightLuma;
+
+	int countY := 0;
+	int countU := 0;
+	int countV := 0;
+
+	
+	
+
+	doneCountY: action ==> 
+	guard countY = IM_WIDTH * IM_HEIGHT
+	do
+		countY := 0;
+	end	
+
+	doneCountU: action ==> 
+	guard countU = IM_WIDTH * IM_HEIGHT
+	do
+		countU := 0;
+	end	
+
+	doneCountV: action ==> 
+	guard countV = IM_WIDTH * IM_HEIGHT
+	do
+		countV := 0;
+	end	
+
+
+
+	sendY: action stream:[Bytes] ==> Y:[y]
+	var uint(size=8) y
+	do
+		y  := Bytes;
+		
+		countY := countY + 1;
+												 
+	end
+
+	sendU: action stream:[Bytes] ==> U:[u]
+	var uint(size=8) u
+	do
+		u  := Bytes;
+		
+		countU := countU + 1;
+												 
+	end
+
+	sendV: action stream:[Bytes] ==> V:[v]
+	var uint(size=8) v
+	do
+		v  := Bytes;
+		
+		countV := countV + 1;
+												 
+	end
+
+
+	
+	schedule fsm s0 :
+		s0 ( sendY ) --> s0;
+		s0 ( doneCountY ) --> s1;
+		s1 ( sendU ) --> s1;
+		s1 ( doneCountU ) --> s2;
+		s2 ( sendV ) --> s2;
+		s2 ( doneCountV ) --> s0;
+	end
+	
+	priority
+		doneCountY > sendY;
+		doneCountU > sendU;
+		doneCountV > sendU;
+	end
+	
+
+
+
+
+
+
+
+
+
+	/*
+	
+	int(size=16)  pictureBufferY[IM_WIDTH * IM_HEIGHT];
+	int(size=16)  pictureBufferU[IM_WIDTH * IM_HEIGHT];
+	int(size=16)  pictureBufferV[IM_WIDTH * IM_HEIGHT];
+	int (size=16) pictureWidthLuma;
+	int (size=16) pictureHeightLuma;
+	
+	int count := 0;
+	
+	
+	getPixValueY: action stream:[Bytes] ==>	
+	do
+		pictureBufferY[count] := Bytes;
+		count := count + 1;						
+	end
+					
+
+	getPixValueU: action stream:[Bytes]==>	
+	do
+		pictureBufferU[count] := Bytes;
+		count := count + 1;					
+	end
+	
+	getPixValueV: action stream :[Bytes]==>
+	do
+		pictureBufferV[count] := Bytes;
+		count := count + 1;					
+	end	
+	
+	
+	doneCount: action ==> 
+	guard count = pictureWidthLuma * pictureHeightLuma
+	do
+		count := 0;
+	end		
+	
+	send: action ==> Y:[y], U:[u], V:[v]
+	var uint(size=8) y, uint(size=8) u, uint(size=8) v
+	do
+		y  := pictureBufferY[count];
+		u := pictureBufferU[count];
+		v := pictureBufferV[count];
+						
+		count := count + 1;		
+		//println(count);												 
+	end
+	
+	schedule fsm s10 :
+		s10 (getPictureSize) --> s0;
+		s0 ( getPixValueY ) --> s0;
+		s0 ( doneCount ) --> s1;
+		s1 ( getPixValueU ) --> s1;
+		s1 ( doneCount ) --> s2;
+		s2 ( getPixValueV ) --> s2;
+		s2 ( doneCount ) --> s3;
+		s3 ( send)-->s3;
+		s3 ( doneCount)-->s10;
+	end
+	
+	priority
+		doneCount > getPixValueY;
+		doneCount > getPixValueU;
+		doneCount > getPixValueV;
+		doneCount > send;
+	end
+	*/
+
+end

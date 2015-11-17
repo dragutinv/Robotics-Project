@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="Output">
+    <Instance id="Test_EOS">
+        <Class name="std.stdio.EndOfStream"/>
+    </Instance>
+    <Instance id="Write_stream">
+        <Class name="std.stdio.Writer"/>
+    </Instance>
+    <Instance id="Source">
+        <Class name="std.stdio.Source"/>
+    </Instance>
+    <Instance id="RGB_to_YUV">
+        <Class name="std.stdio.RGBtoYUV"/>
+    </Instance>
+    <Instance id="YUV_to_Stream">
+        <Class name="std.stdio.YUVtoStream"/>
+    </Instance>
+    <Instance id="YUV_to_RGB">
+        <Class name="std.stdio.YUVtoRGB"/>
+    </Instance>
+    <Instance id="Stream_to_YUV">
+        <Class name="std.stdio.StreamToYUV"/>
+    </Instance>
+    <Instance id="Process">
+        <Class name="xdf.Process"/>
+    </Instance>
+    <Connection dst="Write_stream" dst-port="Byte" src="Test_EOS" src-port="Out"/>
+    <Connection dst="Write_stream" dst-port="pEOF" src="Test_EOS" src-port="pEOF"/>
+    <Connection dst="Test_EOS" dst-port="In" src="YUV_to_Stream" src-port="YUV"/>
+    <Connection dst="YUV_to_Stream" dst-port="Y" src="RGB_to_YUV" src-port="Y"/>
+    <Connection dst="YUV_to_Stream" dst-port="U" src="RGB_to_YUV" src-port="U"/>
+    <Connection dst="YUV_to_Stream" dst-port="V" src="RGB_to_YUV" src-port="V"/>
+    <Connection dst="YUV_to_RGB" dst-port="Y" src="Stream_to_YUV" src-port="Y"/>
+    <Connection dst="YUV_to_RGB" dst-port="U" src="Stream_to_YUV" src-port="U"/>
+    <Connection dst="YUV_to_RGB" dst-port="V" src="Stream_to_YUV" src-port="V"/>
+    <Connection dst="Stream_to_YUV" dst-port="stream" src="Source" src-port="O"/>
+    <Connection dst="Process" dst-port="R" src="YUV_to_RGB" src-port="R"/>
+    <Connection dst="Process" dst-port="G" src="YUV_to_RGB" src-port="G"/>
+    <Connection dst="Process" dst-port="B" src="YUV_to_RGB" src-port="B"/>
+    <Connection dst="RGB_to_YUV" dst-port="R" src="Process" src-port="Ro"/>
+    <Connection dst="RGB_to_YUV" dst-port="G" src="Process" src-port="Go"/>
+    <Connection dst="RGB_to_YUV" dst-port="B" src="Process" src-port="Bo"/>
+</XDF>
