@@ -1,0 +1,13 @@
+Compile:
+-------------------------
+cmake compile:
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+----------------------------
+Execute (in build folder):
+$ ./Meanshift_tracking video.avi 30
+
+
+
